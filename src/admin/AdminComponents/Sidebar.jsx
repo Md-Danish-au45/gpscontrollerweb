@@ -108,9 +108,9 @@ export default function AdminDashboardSidebar({ isOpen, setIsOpen, activeView, o
       className="w-20 h-20 object-contain"
     />
    <h1 className="text-xl font-bold text-gray-900 mb-2">
-    <span className="text-green-600">Verify</span>{" "}
-    <span className="text-blue-600">E-</span>
-    <span className="text-orange-500">KYC</span>
+    <span className="text-green-600">GPS</span>{" "}
+    {/* <span className="text-blue-600">E-</span> */}
+    <span className="text-orange-500">Controller</span>
   </h1>
   </div>
 
