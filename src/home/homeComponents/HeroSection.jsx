@@ -1,94 +1,87 @@
 "use client"
 import { useState, useEffect } from "react"
 import {
-  Shield,
-  Users,
-  FileCheck,
-  Search,
-  Heart,
+  MapPin,
+  Navigation,
+  Satellite,
+  Radio,
+  Gauge,
   ArrowRight,
   Star,
   ChevronLeft,
   ChevronRight,
   CheckCircle,
-  Play
+  Play,
+  Zap,
+  Shield,
+  Clock
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { useNavigate } from "react-router-dom"
-import HeroBg2 from "../../assets/facematch.png"
-import HeroBg3 from "../../assets/adharcard.png"
-import HeroBg4 from "../../assets/faceverification.png"
-import HeroBg5 from "../../assets/scan.png"
 
 const heroSlides = [
   {
     id: 1,
-    title: "Instant Online KYC & Document Verification",
-    subtitle: "AI-Powered Identity Verification Service",
+    title: "Advanced GPS Controller for Precision Navigation",
+    subtitle: "Real-Time GPS Tracking & Control System",
     description:
-      "Stop worrying about fake IDs and forged papers. Our AI-powered eKYC verification system quickly validates Aadhaar, PAN, passports, and more — giving you instant results. Keep your business safe while ensuring smooth digital onboarding.",
+      "Experience industry-leading GPS controller technology with millimeter-accurate positioning. Our high-precision GPS navigation controller supports multi-constellation GNSS tracking including GPS, GLONASS, Galileo, and BeiDou for reliable real-time location monitoring and route optimization.",
     features: [
-      "Instant Aadhaar eKYC Verification",
-      "PAN Card Authenticity & KYC Check",
-      "Passport & Visa Online Verification",
-      "Driving License & RC Identity Validation"
+      "High-Precision GPS Positioning System",
+      "Multi-GNSS Satellite Navigation Support",
+      "Real-Time Location Tracking & Monitoring",
+      "Advanced Route Optimization Algorithm"
     ],
-    icon: FileCheck,
-    gradient: "from-emerald-600 via-teal-600 to-cyan-800",
-    accentColor: "#22c55e",
-    bgImage: HeroBg2,
+    icon: MapPin,
+    gradient: "from-blue-600 via-indigo-600 to-purple-800",
+    accentColor: "#3b82f6",
   },
   {
     id: 2,
-    title: "Smarter Biometric & Face KYC Verification",
-    subtitle: "AI-Driven Liveness & Identity Check",
+    title: "Smart GPS Controller with IoT Integration",
+    subtitle: "Connected GPS Fleet Management Solution",
     description:
-      "Fraudsters can fake photos and videos, but they can't fake life. Our biometric identity verification and real-time liveness detection confirm genuine presence, blocking spoof attacks and ensuring secure online KYC verification.",
+      "Transform your fleet operations with our intelligent GPS controller featuring IoT connectivity. Monitor vehicle location, speed, fuel consumption, and driver behavior in real-time. Perfect for logistics, transportation, and fleet management with cloud-based GPS tracking dashboard.",
     features: [
-      "AI Powered Face Matching & ID Check",
-      "Real-Time Liveness Detection for eKYC",
-      "Identity Match & Verification Score",
-      "Frictionless Biometric KYC Onboarding"
+      "IoT-Enabled GPS Tracking Controller",
+      "Real-Time Fleet Monitoring Dashboard",
+      "Geofencing & Zone Alert System",
+      "Fuel Efficiency & Route Analytics"
     ],
-    icon: Search,
-    gradient: "from-orange-600 via-red-600 to-pink-800",
-    accentColor: "#f97316",
-    bgImage: HeroBg3,
+    icon: Navigation,
+    gradient: "from-emerald-600 via-teal-600 to-cyan-800",
+    accentColor: "#10b981",
   },
   {
     id: 3,
-    title: "Business & Partner KYC Verification Made Easy",
-    subtitle: "Corporate Identity & Compliance Checks",
+    title: "Industrial GPS Controller for Heavy Equipment",
+    subtitle: "Rugged GPS Navigation & Asset Tracking",
     description:
-      "Choose the right partners by verifying business credentials instantly. From GSTIN and CIN checks to MSME and FSSAI validation, our corporate KYC verification services help you build trust and prevent fraud.",
+      "Built for extreme conditions, our industrial-grade GPS controller withstands harsh environments while delivering precise positioning for construction equipment, mining vehicles, and agricultural machinery. Features include shock resistance, waterproof design, and extended temperature range operation.",
     features: [
-      "Instant GSTIN Business Verification",
-      "Company Registration (CIN) Online Check",
-      "MSME & FSSAI Certificate Validation",
-      "Director Identity & Digital KYC Verification"
+      "Military-Grade GPS Controller Module",
+      "IP67 Waterproof & Dustproof Design",
+      "Wide Temperature Range (-40°C to 85°C)",
+      "Heavy-Duty Vehicle GPS Tracking"
     ],
-    icon: Shield,
-    gradient: "from-violet-600 via-purple-600 to-indigo-800",
-    accentColor: "#8b5cf6",
-    bgImage: HeroBg4,
+    icon: Satellite,
+    gradient: "from-orange-600 via-red-600 to-pink-800",
+    accentColor: "#f97316",
   },
   {
     id: 4,
-    title: "Trusted Identity & KYC Verification Platform",
-    subtitle: "Simple, Secure & Fast Online Verification",
+    title: "Wireless GPS Controller with Remote Access",
+    subtitle: "4G/5G Connected GPS Tracking Device",
     description:
-      "Whether for individuals or businesses, verifying identities has never been easier. Our online identity verification service ensures speed, accuracy, and compliance — helping you stay fraud-free while delivering seamless onboarding.",
+      "Stay connected anywhere with our wireless GPS controller featuring 4G LTE and 5G connectivity. Control and monitor your assets remotely through mobile app or web portal. Ideal for vehicle tracking, asset management, personal safety, and logistics automation with instant location updates.",
     features: [
-      "Accurate Online ID Verification Checks",
-      "Instant Fraud & Risk Detection",
-      "Seamless Digital KYC Onboarding",
-      "Trusted Identity Verification for Businesses"
+      "4G/5G Wireless GPS Controller",
+      "Cloud-Based Remote Monitoring",
+      "Mobile App & Web Dashboard Access",
+      "Instant Location & Alert Notifications"
     ],
-    icon: Heart,
-    gradient: "from-rose-600 via-pink-600 to-red-800",
-    accentColor: "#ef4444",
-    bgImage: HeroBg5,
+    icon: Radio,
+    gradient: "from-violet-600 via-purple-600 to-indigo-800",
+    accentColor: "#8b5cf6",
   },
 ];
 
@@ -110,7 +103,6 @@ export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [direction, setDirection] = useState(null)
-  const navigate = useNavigate()
 
   const nextSlide = () => {
     if (isAnimating) return
@@ -152,8 +144,8 @@ export default function HeroSection() {
           66% { transform: translateY(-7px) rotate(-1deg); }
         }
         @keyframes pulse-glow {
-          0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); }
-          50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.4); }
+          0%, 100% { box-shadow: 0 0 15px currentColor; opacity: 0.6; }
+          50% { box-shadow: 0 0 30px currentColor; opacity: 1; }
         }
         @keyframes gradient-shift {
           0% { background-position: 0% 50%; }
@@ -176,6 +168,10 @@ export default function HeroSection() {
           from { transform: translateX(0); opacity: 1; }
           to { transform: translateX(100px); opacity: 0; }
         }
+        @keyframes orbit {
+          0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+          100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+        }
         .animate-float { animation: float 6s ease-in-out infinite; }
         .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
         .animate-gradient { background-size: 200% 200%; animation: gradient-shift 8s ease infinite; }
@@ -183,53 +179,30 @@ export default function HeroSection() {
         .slide-in-right { animation: slide-in-right 0.8s ease-out forwards; }
         .slide-out-left { animation: slide-out-left 0.8s ease-out forwards; }
         .slide-out-right { animation: slide-out-right 0.8s ease-out forwards; }
+        .animate-orbit { animation: orbit 20s linear infinite; }
         
-        .bg-transition {
-          transition: background-image 1s ease-in-out;
-        }
-        
-        /* Mobile optimizations */
         @media (max-width: 640px) {
-          .hero-content {
-            padding: 1rem;
-          }
-          .hero-title {
-            font-size: 2rem;
-            line-height: 1.2;
-          }
-          .hero-description {
-            font-size: 0.9rem;
-            line-height: 1.5;
-          }
+          .hero-content { padding: 1rem; }
+          .hero-title { font-size: 2rem; line-height: 1.2; }
+          .hero-description { font-size: 0.9rem; line-height: 1.5; }
         }
       `}</style>
       
-      <section className="relative w-full overflow-hidden min-h-[100vh] sm:min-h-[90vh] lg:min-h-[80vh] flex items-center bg-gray-50 text-gray-900">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-transition"
-          style={{ backgroundImage: `url(${currentHero.bgImage})` }}
-        />
+      <section className="relative w-full overflow-hidden min-h-[100vh] sm:min-h-[90vh] lg:min-h-[85vh] flex items-center">
+        {/* Animated Background */}
+        <div className={`absolute inset-0 bg-gradient-to-br ${currentHero.gradient} animate-gradient`} />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60 sm:bg-black/50" />
+        {/* Animated Grid Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }} />
+        </div>
         
-        {/* Navigation Arrows - Hidden on mobile */}
-        {/* <button
-          onClick={prevSlide}
-          disabled={isAnimating}
-          className="hidden lg:flex absolute left-4 xl:left-8 z-20 items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 disabled:opacity-50"
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button> */}
-        
-        {/* <button
-          onClick={nextSlide}
-          disabled={isAnimating}
-          className="hidden lg:flex absolute right-4 xl:right-8 z-20 items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 disabled:opacity-50"
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button> */}
+        {/* Glowing Orbs */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         
         {/* Main Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:py-24">
@@ -242,86 +215,121 @@ export default function HeroSection() {
                 }`}
               >
                 {/* Badge */}
-               <h2 className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md text-gray-800 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg border border-gray-200 animate-pulse-glow">
-  <currentHero.icon className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: currentHero.accentColor }} />
-  <span className="truncate">{currentHero.subtitle}</span>
-  <div className="hidden sm:flex gap-0.5">
-    {[...Array(5)].map((_, i) => (
-      <Star key={i} className="w-2.5 h-2.5 text-yellow-400 fill-current" />
-    ))}
-  </div>
-</h2>
-
+                <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md text-gray-800 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg border border-white/20 animate-pulse-glow">
+                  <currentHero.icon className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: currentHero.accentColor }} />
+                  <span className="truncate">{currentHero.subtitle}</span>
+                  <div className="hidden sm:flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-2.5 h-2.5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                </div>
                 
                 {/* Title */}
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight hero-title">
-                  <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-                    {currentHero.title}
-                  </span>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight hero-title drop-shadow-lg">
+                  {currentHero.title}
                 </h1>
                 
                 {/* Description */}
-                <p className="text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed font-light hero-description max-w-3xl">
+                <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed font-light hero-description max-w-3xl drop-shadow">
                   {currentHero.description}
                 </p>
                 
-                {/* Features Grid - Responsive */}
+                {/* Features Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2 sm:pt-4">
                   {currentHero.features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                      <span className="text-xs sm:text-sm font-medium text-gray-700 leading-tight">{feature}</span>
+                    <div key={index} className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white/90 backdrop-blur-sm rounded-lg border border-white/30 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:bg-white">
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" style={{ color: currentHero.accentColor }} />
+                      <span className="text-xs sm:text-sm font-medium text-gray-800 leading-tight">{feature}</span>
                     </div>
                   ))}
                 </div>
                 
-                {/* Action Buttons - Fully Responsive */}
+                {/* Stats Bar */}
+                <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-4">
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-3 text-center border border-white/30">
+                    <div className="text-xl sm:text-2xl font-bold text-white">99.9%</div>
+                    <div className="text-xs text-white/80">Accuracy</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-3 text-center border border-white/30">
+                    <div className="text-xl sm:text-2xl font-bold text-white">&lt;1s</div>
+                    <div className="text-xs text-white/80">Response</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md rounded-lg p-3 text-center border border-white/30">
+                    <div className="text-xl sm:text-2xl font-bold text-white">24/7</div>
+                    <div className="text-xs text-white/80">Monitoring</div>
+                  </div>
+                </div>
+                
+                {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6">
                   <Button
-                    className="group relative overflow-hidden text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-                    style={{ backgroundColor: currentHero.accentColor }}
-                    onClick={() => navigate("/pricing")}
+                    className="group relative overflow-hidden bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
                   >
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      View Pricing
+                      Get GPS Controller
                       <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
                     </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-200 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   </Button>
                   
                   <Button
                     variant="outline"
-                    className="group border-2 text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg font-semibold rounded-xl bg-white/20 backdrop-blur-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-                    style={{ borderColor: currentHero.accentColor }}
+                    className="group border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg font-semibold rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:shadow-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
                   >
                     <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:animate-pulse" />
-Start KYC Verification
+                    Watch Demo
                   </Button>
                 </div>
               </div>
             </div>
             
-            {/* Decorative Elements - Hidden on small screens */}
-            <div className="hidden lg:block lg:col-span-4 xl:col-span-5">
-              <div className="relative">
-                <FloatingElement delay={0} className="absolute -top-10 -left-10">
-                  <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 flex items-center justify-center">
-                    <Shield className="w-10 h-10 text-white" />
-                  </div>
-                </FloatingElement>
-                
-                <FloatingElement delay={1} className="absolute -top-5 -right-5">
-                  <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center">
-                    <FileCheck className="w-8 h-8 text-white" />
-                  </div>
-                </FloatingElement>
-                
-                <FloatingElement delay={2} className="absolute -bottom-10 left-5">
-                  <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 flex items-center justify-center">
-                    <Users className="w-7 h-7 text-white" />
+            {/* Decorative 3D Elements */}
+            <div className="hidden lg:block lg:col-span-4 xl:col-span-5 relative h-96">
+              {/* Central GPS Icon */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="relative w-32 h-32 bg-white/20 backdrop-blur-md rounded-3xl border-2 border-white/40 flex items-center justify-center shadow-2xl animate-pulse">
+                  <MapPin className="w-16 h-16 text-white" />
+                </div>
+              </div>
+              
+              {/* Orbiting Satellites */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <FloatingElement delay={0} className="animate-orbit">
+                  <div className="w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl border border-white/30 flex items-center justify-center shadow-lg">
+                    <Satellite className="w-8 h-8 text-white" />
                   </div>
                 </FloatingElement>
               </div>
+              
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ animationDelay: '5s' }}>
+                <FloatingElement delay={1} className="animate-orbit">
+                  <div className="w-14 h-14 bg-white/15 backdrop-blur-sm rounded-xl border border-white/30 flex items-center justify-center shadow-lg">
+                    <Navigation className="w-7 h-7 text-white" />
+                  </div>
+                </FloatingElement>
+              </div>
+              
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ animationDelay: '10s' }}>
+                <FloatingElement delay={2} className="animate-orbit">
+                  <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-lg border border-white/30 flex items-center justify-center shadow-lg">
+                    <Radio className="w-6 h-6 text-white" />
+                  </div>
+                </FloatingElement>
+              </div>
+              
+              {/* Static Floating Elements */}
+              <FloatingElement delay={0} className="absolute top-10 right-10">
+                <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 flex items-center justify-center shadow-xl">
+                  <Shield className="w-10 h-10 text-white" />
+                </div>
+              </FloatingElement>
+              
+              <FloatingElement delay={1.5} className="absolute bottom-20 left-5">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center shadow-xl">
+                  <Zap className="w-8 h-8 text-white" />
+                </div>
+              </FloatingElement>
             </div>
           </div>
         </div>
@@ -333,21 +341,21 @@ Start KYC Verification
               key={index}
               onClick={() => goToSlide(index)}
               disabled={isAnimating}
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+              className={`transition-all duration-300 rounded-full ${
                 index === currentSlide 
-                  ? 'bg-white scale-125' 
-                  : 'bg-white/50 hover:bg-white/75'
+                  ? 'w-8 h-3 bg-white' 
+                  : 'w-3 h-3 bg-white/50 hover:bg-white/75'
               } disabled:opacity-50`}
             />
           ))}
         </div>
         
-        {/* Mobile Navigation Dots */}
+        {/* Mobile Navigation */}
         <div className="block sm:hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20 flex gap-4">
           <button
             onClick={prevSlide}
             disabled={isAnimating}
-            className="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white active:scale-95 transition-all duration-200 disabled:opacity-50"
+            className="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white active:scale-95 transition-all duration-200 disabled:opacity-50 border border-white/30"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -355,38 +363,72 @@ Start KYC Verification
           <button
             onClick={nextSlide}
             disabled={isAnimating}
-            className="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white active:scale-95 transition-all duration-200 disabled:opacity-50"
+            className="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white active:scale-95 transition-all duration-200 disabled:opacity-50 border border-white/30"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
       </section>
-   <section className="relative bg-gradient-to-b from-white to-gray-50 py-10 sm:py-14 lg:py-20 text-center">
-  {/* Badge */}
-  <div className="mb-4 sm:mb-6">
-    <span className="inline-flex items-center gap-2 px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full bg-blue-50 text-blue-600 border border-blue-100">
-      ✨ Trusted Partnerships
-    </span>
-  </div>
 
-  {/* Heading */}
-  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-4xl mx-auto leading-snug">
-    Trusted <span className="text-blue-600">Identity Verification Solution</span> for{" "}
-    <span className="text-green-600">100+ Businesses</span>
-  </h2>
+      {/* Trust Section */}
+      <section className="relative bg-gradient-to-b from-gray-50 to-white py-10 sm:py-14 lg:py-20 text-center px-4">
+        {/* Badge */}
+        <div className="mb-4 sm:mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full bg-blue-50 text-blue-600 border border-blue-100">
+            ✨ Industry-Leading GPS Technology
+          </span>
+        </div>
 
-  {/* Description */}
-  <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-    VerifyEKYC provides fast, secure and AI-powered{" "}
-    <strong className="text-gray-900">online KYC verification</strong> and{" "}
-    <strong className="text-gray-900">identity verification services</strong>. 
-    From Aadhaar and PAN checks to biometric face verification, our{" "}
-    <strong className="text-gray-900">eKYC platform</strong> helps businesses stay 
-    compliant, prevent fraud and onboard customers in minutes.
-  </p>
-</section>
+        {/* Heading */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-4xl mx-auto leading-snug">
+          Professional <span className="text-blue-600">GPS Controller System</span> for{" "}
+          <span className="text-green-600">Real-Time Tracking</span>
+        </h2>
 
+        {/* Description */}
+        <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          Our advanced <strong className="text-gray-900">GPS controller technology</strong> delivers 
+          precision <strong className="text-gray-900">real-time GPS tracking</strong> and navigation solutions. 
+          From fleet management to personal tracking, our{" "}
+          <strong className="text-gray-900">GPS navigation controller</strong> provides industry-leading 
+          accuracy, reliability, and seamless integration for all your location-based needs.
+        </p>
 
+        {/* Trust Indicators */}
+        <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+              <MapPin className="w-8 h-8 text-blue-600" />
+            </div>
+            <div className="text-2xl font-bold text-gray-900">10M+</div>
+            <div className="text-sm text-gray-600">Devices Tracked</div>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-3">
+              <Gauge className="w-8 h-8 text-green-600" />
+            </div>
+            <div className="text-2xl font-bold text-gray-900">99.9%</div>
+            <div className="text-sm text-gray-600">Uptime SLA</div>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-3">
+              <Clock className="w-8 h-8 text-purple-600" />
+            </div>
+            <div className="text-2xl font-bold text-gray-900">&lt;1s</div>
+            <div className="text-sm text-gray-600">Update Rate</div>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-3">
+              <Shield className="w-8 h-8 text-orange-600" />
+            </div>
+            <div className="text-2xl font-bold text-gray-900">ISO</div>
+            <div className="text-sm text-gray-600">Certified</div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
