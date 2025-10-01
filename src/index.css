@@ -1,0 +1,24 @@
+/*
+ * Tailwind CSS, tw-animate-css और कस्टम वेरिएंट्स को इंपोर्ट करें।
+ * Import Tailwind CSS, tw-animate-css, and custom variants.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+button {
+  cursor: pointer;
+}
+
+
+body {
+  background-color: #f8f9fa; /* Soft neutral background */
+  color: #212529;
+  margin: 0;  /* Reset default browser margin */
+  padding: 0; /* Reset default padding */
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+
+}

@@ -1,0 +1,110 @@
+{
+  "id": "com.verifyekyc.app",
+  "name": "Verify EKYC",
+  "short_name": "EKYC",
+  "description": "Trusted Digital Verification Solutions",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "scope": "https://www.verifyekyc.com",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "utilities",
+    "productivity"
+  ],
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser",
+    "fullscreen",
+    "window-controls-overlay",
+    "tabbed"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Verification",
+      "short_name": "Verify",
+      "url": "/verify",
+      "icons": [
+        {
+          "src": "/icons/verify.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Dashboard",
+      "short_name": "Dashboard",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/icons/verify.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/upload",
+      "accept": {
+        "application/pdf": [
+          ".pdf"
+        ],
+        "image/*": [
+          ".png",
+          ".jpg",
+          ".jpeg"
+        ]
+      }
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "file",
+          "accept": [
+            "image/*",
+            "application/pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

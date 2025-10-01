@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Blog 1 -->
+  <url>
+    <loc>https://www.verifyekyc.com/blog/how-to-verify-passport-online</loc>
+    <lastmod>2025-09-21T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 2 -->
+  <url>
+    <loc>https://www.verifyekyc.com/blog/driving-license-verification-tips</loc>
+    <lastmod>2025-09-21T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 3 -->
+  <url>
+    <loc>https://www.verifyekyc.com/blog/why-kyc-is-important</loc>
+    <lastmod>2025-09-21T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

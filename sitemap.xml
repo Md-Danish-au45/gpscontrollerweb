@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.verifyekyc.com/</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://www.verifyekyc.com/about-us</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Us -->
+  <url>
+    <loc>https://www.verifyekyc.com/contact-us</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.verifyekyc.com/blog</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Case Study -->
+  <url>
+    <loc>https://www.verifyekyc.com/case-study</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Product: Passport Verify -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/passport-verify</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Product: Driving License Verification -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/driving-license-verification</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Product: RC Verification -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/rc-verification</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Product: Bank Account Verification -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/bank-account-verification</loc>
+    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+   <sitemap>
+    <loc>https://www.verifyekyc.com/blog-sitemap.xml</loc>
+    <lastmod>2025-09-21</lastmod>
+  </sitemap>
+
+  <!-- Product Sitemap -->
+  <sitemap>
+    <loc>https://www.verifyekyc.com/product-sitemap.xml</loc>
+    <lastmod>2025-09-21</lastmod>
+  </sitemap>
+
+
+</urlset>

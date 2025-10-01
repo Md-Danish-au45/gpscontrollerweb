@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Passport Verification Image -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/passport-verify</loc>
+    <image:image>
+      <image:loc>https://www.verifyekyc.com/images/passport.jpg</image:loc>
+      <image:title>Passport Verification Service - Verify KYC</image:title>
+      <image:caption>Fast and reliable online passport verification service</image:caption>
+      <image:license>https://www.verifyekyc.com/license</image:license>
+    </image:image>
+  </url>
+
+  <!-- Driving License Verification Image -->
+  <url>
+    <loc>https://www.verifyekyc.com/product/driving-license-verification</loc>
+    <image:image>
+      <image:loc>https://www.verifyekyc.com/images/driving-license.jpg</image:loc>
+      <image:title>Driving License Verification Service - Verify KYC</image:title>
+      <image:caption>Instant driving license verification for seamless KYC</image:caption>
+      <image:license>https://www.verifyekyc.com/license</image:license>
+    </image:image>
+  </url>
+
+</urlset>

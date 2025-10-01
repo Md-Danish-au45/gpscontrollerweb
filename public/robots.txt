@@ -1,0 +1,42 @@
+# ==============================
+# Global Access Rules
+# ==============================
+User-agent: *
+Allow: /
+
+# Important sections (high value for SEO)
+Allow: /blog/
+Allow: /case-study/
+Allow: /product/
+Allow: /about-us
+Allow: /contact-us
+
+# ==============================
+# Blocked Directories (non-public or duplicate)
+# ==============================
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /api/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /search
+
+# Block query parameters (to avoid duplicate content)
+Disallow: /*?*
+Disallow: /*&*
+
+# ==============================
+# Bot-Specific Rules
+# ==============================
+# Bingbot throttling (Google ignores crawl-delay, Bing respects it)
+User-agent: Bingbot
+Crawl-delay: 5
+
+# ==============================
+# Sitemap Locations
+# ==============================
+Sitemap: https://www.verifyekyc.com/sitemap.xml
+Sitemap: https://www.verifyekyc.com/product-sitemap.xml
+Sitemap: https://www.verifyekyc.com/blog-sitemap.xml
+Sitemap: https://www.verifyekyc.com/image-sitemap.xml
