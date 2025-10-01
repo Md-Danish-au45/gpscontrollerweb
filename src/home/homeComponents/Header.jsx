@@ -305,7 +305,7 @@ export default function Header() {
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <div className="flex items-center gap-3">
                 <img src={VerifyMyKyc} className="w-10 h-10 object-contain" alt="Verify E-KYC Logo" />
-                <div><h2 className="font-bold text-gray-900">Verify E-KYC</h2><p className="text-xs text-gray-500">Menu</p></div>
+                <div><h2 className="font-bold text-gray-900">GPS Controller</h2><p className="text-xs text-gray-500">Menu</p></div>
               </div>
               <button onClick={toggleMobileMenu} className="p-2 rounded-xl hover:bg-gray-100 transition-colors"><X size={24} className="text-gray-500" /></button>
             </div>

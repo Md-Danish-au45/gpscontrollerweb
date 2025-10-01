@@ -30,15 +30,15 @@ import { logOut } from "@/features/auth/authSlice"
 import logo from "../../assets/logo.png" // ← अपना logo image यहां import करें
 
 const navigationItems = [
-  { title: "Dashboard", icon: Home, key: "dashboard" },
-  { title: "Analytics", icon: BarChart2, key: "analytics" },
-  // Renamed for clarity
-  { title: "Orders", icon: ClipboardList, key: "orders" },
-  { title: "Coupons", icon: Sparkles, key: "coupons" }, // Used Sparkles for coupons
-  { title: "Services", icon: Info, key: "services" },
-  { title: "Register Admin", icon: Users, key: "register" },
-  { title: "Feedback", icon: MessageCircle, key: "feedback" },
-  { title: "Shared Dashboard", icon: Users, key: "shared" },
+  // { title: "Dashboard", icon: Home, key: "dashboard" },
+  // { title: "Analytics", icon: BarChart2, key: "analytics" },
+  // // Renamed for clarity
+  // { title: "Orders", icon: ClipboardList, key: "orders" },
+  // { title: "Coupons", icon: Sparkles, key: "coupons" }, // Used Sparkles for coupons
+  // { title: "Services", icon: Info, key: "services" },
+  // { title: "Register Admin", icon: Users, key: "register" },
+  // { title: "Feedback", icon: MessageCircle, key: "feedback" },
+  // { title: "Shared Dashboard", icon: Users, key: "shared" },
   { title: "Blog", icon: MessageCircle, key: "blog" },
 
 ]
