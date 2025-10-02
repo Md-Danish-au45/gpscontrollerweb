@@ -8,4 +8,4 @@ Disallow: /register/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.verifyekyc.com/sitemap.xml
+Sitemap: https://www.gpscontroller.com/sitemap.xml
