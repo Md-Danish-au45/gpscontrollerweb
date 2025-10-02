@@ -1,94 +1,95 @@
 "use client"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Users, Shield, Clock, Star, ArrowUpRight, Menu } from "lucide-react"
+import { ArrowRight, CheckCircle, Car, Shield, Clock, Star, ArrowUpRight, Menu, MapPin, Globe, BatteryCharging, Server } from "lucide-react"
 import Header from "./homeComponents/Header"
 import Footer from "./homeComponents/Footer"
-// SEO Keywords: Identity Verification, KYC, Fraud Prevention, Digital Onboarding,
-// AML Compliance, Customer Verification, Fintech Solutions, E-commerce, Banking.
+
+// SEO Keywords: GPS Tracking, IoT Solutions, Fleet Management, Real-time Location, 
+// Asset Tracking, Route Optimization, Telematics, Vehicle Tracking API, Supply Chain.
 import TopBar from "./homeComponents/TopBar"
 
 const stats = [
-  { label: "Identity Success Rate", value: "99.8%", icon: CheckCircle },
-  { label: "Fraud Reduction", value: "94%", icon: Shield },
-  { label: "Time Saved", value: "75%", icon: Clock },
+  { label: "Real-time Accuracy", value: "99.9%", icon: MapPin },
+  { label: "Fleet Downtime Reduction", value: "85%", icon: Shield },
+  { label: "Route Optimization Savings", value: "25%", icon: Globe },
   { label: "Client Satisfaction", value: "4.9/5", icon: Star },
 ]
 
 const caseStudies = [
   {
     id: 1,
-    title: "FinTech Startup Reduces Fraud by 95% with AI Identity Verification",
-    company: "PaySecure",
-    industry: "Financial Technology",
-    challenge: "High fraud rates and manual KYC verification processes",
-    solution: "Implemented AI-powered digital onboarding with real-time KYC and AML compliance checks",
+    title: "Logistics Giant Achieves 20% Fuel Savings with Route Optimization",
+    company: "TransExpress Logistics",
+    industry: "Fleet & Logistics Management",
+    challenge: "Inefficient routing, high fuel consumption, and lack of real-time visibility on deliveries.",
+    solution: "Implemented the GPS Controller platform with dynamic route optimization and real-time vehicle tracking API integration.",
     results: [
-      "95% reduction in fraudulent accounts",
-      "80% faster customer onboarding process",
-      "99.2% accuracy in identity verification",
-      "$2.3M saved in fraud prevention",
+      "20% reduction in monthly fuel costs",
+      "15% increase in on-time delivery rate (OTD)",
+      "Instant driver performance and behavior reports",
+      "Full compliance with transportation regulations",
     ],
     image: "https://www.commercialdesignindia.com/cloud/2025/05/19/9DfwaoRC-E_PS1_7166_FS1-1200x675.jpg",
     testimonial:
-      "Verify EKyc transformed our customer verification. We went from hours to minutes while dramatically improving security and compliance.",
-    author: "Sarah",
-    position: "CTO",
+      "GPS Controller transformed our fleet operations. The route optimization features alone paid for the system within six months, significantly boosting our profitability.",
+    author: "Ravi Shankar",
+    position: "Head of Operations",
     metrics: {
-      fraudReduction: "95%",
-      timeReduction: "80%",
-      accuracy: "99.2%",
-      savings: "$2.3M",
+      fuelReduction: "20%",
+      onTimeDelivery: "15%",
+      fleetSize: "500+",
+      savingsROI: "100%",
     },
   },
   {
     id: 2,
-    title: "E-commerce Platform Scales Globally with Digital KYC Compliance",
-    company: "ShopGlobal",
-    industry: "E-commerce",
-    challenge: "Expanding to 15+ countries with varying identity verification and AML compliance requirements",
-    solution: "Multi-language KYC solution with region-specific document verification and fraud prevention tools",
+    title: "Cold Chain Monitoring Secured by Advanced IoT Asset Tracking",
+    company: "PharmaCold Solutions",
+    industry: "Pharmaceutical & Cold Chain",
+    challenge: "Ensuring temperature compliance and security for high-value pharma assets during transit across states.",
+    solution: "Deployed specialized IoT asset tracking devices integrated with the platform for real-time temperature, humidity, and location monitoring.",
     results: [
-      "Expanded to 18 countries successfully",
-      "Reduced compliance costs by 60%",
-      "Improved customer satisfaction by 45%",
-      "Processed 500K+ verifications monthly",
+      "100% compliance with temperature logs",
+      "Zero product loss due to temperature deviations",
+      "Instant alerts via telematics for unauthorized door openings",
+      "Improved regulatory audit readiness",
     ],
     image: "https://plus.unsplash.com/premium_photo-1683141172508-b67ca5f17194?fm=jpg&q=60&w=3000",
     testimonial:
-      "The global identity verification features made our international expansion seamless and cost-effective.",
-    author: "Mohit Gupta",
-    position: "Head of Operations",
+      "The IoT Solutions provided by GPS Controller gave us granular control over our sensitive shipments. It's the most reliable supply chain tracking system we've used.",
+    author: "Dr. Anjali Verma",
+    position: "Quality Assurance Director",
     metrics: {
-      countries: "18",
-      costReduction: "60%",
-      satisfaction: "45%",
-      volume: "500K+",
+      lossReduction: "0%",
+      complianceRate: "100%",
+      tempAccuracy: "±0.5°C",
+      realTimeUpdates: "5 sec",
     },
   },
   {
     id: 3,
-    title: "Banking App Achieves 100% AML & KYC Compliance",
-    company: "NeoBank",
-    industry: "Digital Banking",
-    challenge: "Meeting strict regulatory AML/KYC requirements while maintaining smooth onboarding",
-    solution: "Comprehensive digital onboarding with automated KYC, identity verification, and AML compliance reporting",
+    title: "Construction Firm Boosts Security with Geo-fencing and GPS Monitoring",
+    company: "BuildSafe Infrastructure",
+    industry: "Construction & Heavy Machinery",
+    challenge: "Preventing theft and unauthorized use of expensive heavy machinery across multiple remote sites.",
+    solution: "Implemented heavy equipment GPS monitoring with custom geo-fencing and engine hour tracking to ensure machinery is only used within permitted hours/locations.",
     results: [
-      "100% regulatory compliance achieved",
-      "50% reduction in compliance team workload",
-      "Zero regulatory penalties",
-      "4.8/5 customer onboarding satisfaction",
+      "85% reduction in unauthorized machinery use",
+      "Instant theft recovery via live location tracking",
+      "Accurate billing and maintenance scheduling based on engine hours",
+      "Lower insurance premiums due to enhanced security",
     ],
     image: "https://cdn.techinasia.com/wp-content/uploads/2025/04/1745549426_1737991117555-750x563.jpg",
     testimonial:
-      "We achieved perfect AML and KYC compliance without sacrificing user experience. The automated reporting saved us countless hours.",
-    author: "Rahul Das",
-    position: "Compliance Director, NeoBank",
+      "The GPS tracking system is robust and reliable. We now track every piece of equipment and get instant alerts the moment a vehicle leaves a site after hours. Excellent security solution.",
+    author: "Gautam Rao",
+    position: "Site Security Manager",
     metrics: {
-      compliance: "100%",
-      workloadReduction: "50%",
-      penalties: "0",
-      rating: "4.8/5",
+      securityImprovement: "85%",
+      recoveryTime: "Avg 3 hrs",
+      sitesMonitored: "15+",
+      equipmentTracked: "120+",
     },
   },
 ]
@@ -144,11 +145,10 @@ export default function CaseStudyPage() {
                         className="text-center max-w-4xl mx-auto"
                     >
                         <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                            Real Results: KYC, Fraud Prevention & Identity Verification
+                            Driving Efficiency: GPS Tracking & IoT Solutions Success Stories
                         </h1>
                         <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                            Discover how leading companies across industries have streamlined their identity verification,
-                            reduced fraud, and improved customer experience with our advanced KYC solutions.
+                            Discover how leading enterprises are achieving operational excellence, securing assets, and slashing costs with our advanced IoT and GPS tracking platform.
                         </p>
                         <div className="flex flex-wrap justify-center gap-8 mt-12">
                             {stats.map((stat, index) => (
@@ -162,8 +162,8 @@ export default function CaseStudyPage() {
                                     <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-3 mx-auto">
                                         <stat.icon className="w-8 h-8 text-blue-600" />
                                     </div>
-                                    <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
-                                    <div className="text-sm text-gray-600">{stat.label}</div>
+                                    <h2 className="text-3xl font-bold text-gray-900">{stat.value}</h2>
+                                    <h3 className="text-sm text-gray-600">{stat.label}</h3>
                                 </motion.div>
                             ))}
                         </div>
@@ -181,9 +181,9 @@ export default function CaseStudyPage() {
                         viewport={{ once: true }}
                         className="text-center mb-16"
                     >
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Success Stories</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Transforming Operations with Telematics</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            See how our clients have achieved remarkable results with our digital onboarding and AML compliance solutions.
+                            See how our clients have achieved remarkable results in fleet management and asset tracking using our powerful Vehicle Tracking API.
                         </p>
                     </motion.div>
 
@@ -235,7 +235,7 @@ export default function CaseStudyPage() {
                                         <p className="text-gray-700 italic mb-4">"{study.testimonial}"</p>
                                         <div className="flex items-center gap-3">
                                             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                                <Users className="w-5 h-5 text-blue-600" />
+                                                <Car className="w-5 h-5 text-blue-600" />
                                             </div>
                                             <div>
                                                 <div className="font-semibold text-gray-900">{study.author}</div>
@@ -287,14 +287,14 @@ export default function CaseStudyPage() {
                         className="max-w-3xl mx-auto"
                     >
                         <h2 className="text-4xl font-bold text-white mb-6">
-                            Ready to Streamline Your Customer Verification?
+                            Ready to Optimize Your Fleet with Real-time GPS Tracking?
                         </h2>
                         <p className="text-xl text-blue-100 mb-8">
-                            Join hundreds of companies that trust VerifyEKYC for their secure digital onboarding and compliance needs.
+                            Join hundreds of companies that trust GPS Controller for their secure IoT asset tracking and operational efficiency needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button onClick={handleNavigate} size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-                                Get Started Today
+                                Get Started with Telematics
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                             <Button

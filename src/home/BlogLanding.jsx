@@ -110,9 +110,10 @@ export default function BlogLandingPage() {
                           className="text-center"
                         >
                           <h1 className="text-4xl md:text-5xl font-bold mb-4"> Blogs</h1>
-                           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-The Future of Identity Verification and Digital Security
-              </p>
+<p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+  Revolutionizing Fleet Management with AI-Powered GPS Tracking
+</p>
+
                         </motion.div>
                       </div>
                     </div>
