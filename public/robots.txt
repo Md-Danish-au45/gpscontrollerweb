@@ -7,7 +7,6 @@ Allow: /
 # Important sections (high value for SEO)
 Allow: /blog/
 Allow: /case-study/
-Allow: /product/
 Allow: /about-us
 Allow: /contact-us
 
@@ -36,7 +35,7 @@ Crawl-delay: 5
 # ==============================
 # Sitemap Locations
 # ==============================
-Sitemap: https://www.verifyekyc.com/sitemap.xml
-Sitemap: https://www.verifyekyc.com/product-sitemap.xml
-Sitemap: https://www.verifyekyc.com/blog-sitemap.xml
-Sitemap: https://www.verifyekyc.com/image-sitemap.xml
+Sitemap: https://www.gpscontroller.com/sitemap.xml
+Sitemap: https://www.gpscontroller.com/product-sitemap.xml
+Sitemap: https://www.gpscontroller.com/blog-sitemap.xml
+Sitemap: https://www.gpscontroller.com/image-sitemap.xml

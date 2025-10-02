@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/">
 <channel>
-  <title>ROR Sitemap for https://www.verifyekyc.com/</title>
-  <link>https://www.verifyekyc.com/</link>
+  <title>ROR Sitemap for https://www.gpscontroller.com/</title>
+  <link>https://www.gpscontroller.com/</link>
 
-<item>
-     <link>https://www.verifyekyc.com/</link>
-     <title>Verify E-Kyc</title>
-     <description>Verify E-Kyc</description>
+  <item>
+     <link>https://www.gpscontroller.com/</link>
+     <title>GPS Controller</title>
+     <description>GPS Controller - GPS Tracking, IoT Sensors & Fleet Management Solutions</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
+  </item>
+
 </channel>
 </rss>
-  

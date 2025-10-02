@@ -507,9 +507,9 @@ const generatePDF = (result, serviceName = 'Verification') => {
 
     <!-- Slogan -->
     <p style="margin: 6px 0 0; font-size: 20px; font-weight: 600;">
-      <span style="color: #2E8B57;">Trusted Verification</span>
-      <span style="color: #1E3A8A;"> For A </span>
-      <span style="color: #FF6600;">Digital World</span>
+      <span style="color: #2E8B57;">Track Anything</span>
+      <span style="color: #1E3A8A;">Anywhere </span>
+      // <span style="color: #FF6600;">Digital World</span>
     </p>
   </div>
 

@@ -170,7 +170,7 @@ export default function Header() {
               <h1 className="text-xl font-bold leading-tight bg-gradient-to-r from-green-600 via-blue-600 to-orange-500 bg-clip-text text-transparent">
                 GPS Controller
               </h1>
-              <p className="text-xs text-gray-500 -mt-1">Trusted Verification For A Digital World</p>
+              <p className="text-xs text-gray-500 -mt-1">Track Anything, Anywhere</p>
             </div>
           </div>
 

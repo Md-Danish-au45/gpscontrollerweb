@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Passport Verification Image -->
+  <!-- GPS Tracking Image -->
   <url>
-    <loc>https://www.verifyekyc.com/product/passport-verify</loc>
+    <loc>https://www.gpscontroller.com/gps-tracking</loc>
     <image:image>
-      <image:loc>https://www.verifyekyc.com/images/passport.jpg</image:loc>
-      <image:title>Passport Verification Service - Verify KYC</image:title>
-      <image:caption>Fast and reliable online passport verification service</image:caption>
-      <image:license>https://www.verifyekyc.com/license</image:license>
+      <image:loc>https://www.gpscontroller.com/images/gps-tracking.jpg</image:loc>
+      <image:title>GPS Tracking Solutions for Vehicles & Assets</image:title>
+      <image:caption>Advanced GPS tracking solutions for vehicles, fleets and assets.</image:caption>
+      <image:license>https://www.gpscontroller.com/license</image:license>
     </image:image>
   </url>
 
-  <!-- Driving License Verification Image -->
+  <!-- IoT Sensors Image -->
   <url>
-    <loc>https://www.verifyekyc.com/product/driving-license-verification</loc>
+    <loc>https://www.gpscontroller.com/iot-sensors</loc>
     <image:image>
-      <image:loc>https://www.verifyekyc.com/images/driving-license.jpg</image:loc>
-      <image:title>Driving License Verification Service - Verify KYC</image:title>
-      <image:caption>Instant driving license verification for seamless KYC</image:caption>
-      <image:license>https://www.verifyekyc.com/license</image:license>
+      <image:loc>https://www.gpscontroller.com/images/iot-sensors.jpg</image:loc>
+      <image:title>IoT Sensors for Remote Monitoring</image:title>
+      <image:caption>Smart IoT sensors for industrial and environmental monitoring.</image:caption>
+      <image:license>https://www.gpscontroller.com/license</image:license>
     </image:image>
   </url>
 

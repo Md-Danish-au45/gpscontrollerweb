@@ -3,7 +3,7 @@
 
   <!-- Blog 1 -->
   <url>
-    <loc>https://www.verifyekyc.com/blog/how-to-verify-passport-online</loc>
+    <loc>https://www.gpscontroller.com/blog/gps-tracking-benefits</loc>
     <lastmod>2025-09-21T09:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -11,7 +11,7 @@
 
   <!-- Blog 2 -->
   <url>
-    <loc>https://www.verifyekyc.com/blog/driving-license-verification-tips</loc>
+    <loc>https://www.gpscontroller.com/blog/iot-sensors-for-industries</loc>
     <lastmod>2025-09-21T09:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,15 @@
 
   <!-- Blog 3 -->
   <url>
-    <loc>https://www.verifyekyc.com/blog/why-kyc-is-important</loc>
+    <loc>https://www.gpscontroller.com/blog/fleet-management-solutions</loc>
+    <lastmod>2025-09-21T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog 4 -->
+  <url>
+    <loc>https://www.gpscontroller.com/blog/asset-tracking-iot</loc>
     <lastmod>2025-09-21T09:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

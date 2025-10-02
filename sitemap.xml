@@ -7,77 +7,46 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.verifyekyc.com/</loc>
+    <loc>https://www.gpscontroller.com/</loc>
     <lastmod>2025-09-20T19:02:51+00:00</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- About Us -->
   <url>
-    <loc>https://www.verifyekyc.com/about-us</loc>
+    <loc>https://www.gpscontroller.com/about-us</loc>
     <lastmod>2025-09-20T19:02:51+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Contact Us -->
   <url>
-    <loc>https://www.verifyekyc.com/contact-us</loc>
+    <loc>https://www.gpscontroller.com/contact-us</loc>
     <lastmod>2025-09-20T19:02:51+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://www.verifyekyc.com/blog</loc>
+    <loc>https://www.gpscontroller.com/blog</loc>
     <lastmod>2025-09-20T19:02:51+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <!-- Case Study -->
   <url>
-    <loc>https://www.verifyekyc.com/case-study</loc>
+    <loc>https://www.gpscontroller.com/case-study</loc>
     <lastmod>2025-09-20T19:02:51+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
-  <!-- Product: Passport Verify -->
-  <url>
-    <loc>https://www.verifyekyc.com/product/passport-verify</loc>
-    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
-    <priority>0.6</priority>
-  </url>
 
-  <!-- Product: Driving License Verification -->
-  <url>
-    <loc>https://www.verifyekyc.com/product/driving-license-verification</loc>
-    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Product: RC Verification -->
-  <url>
-    <loc>https://www.verifyekyc.com/product/rc-verification</loc>
-    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Product: Bank Account Verification -->
-  <url>
-    <loc>https://www.verifyekyc.com/product/bank-account-verification</loc>
-    <lastmod>2025-09-20T19:02:51+00:00</lastmod>
-    <priority>0.6</priority>
-  </url>
 
    <sitemap>
-    <loc>https://www.verifyekyc.com/blog-sitemap.xml</loc>
+    <loc>https://www.gpscontroller.com/blog-sitemap.xml</loc>
     <lastmod>2025-09-21</lastmod>
   </sitemap>
 
-  <!-- Product Sitemap -->
-  <sitemap>
-    <loc>https://www.verifyekyc.com/product-sitemap.xml</loc>
-    <lastmod>2025-09-21</lastmod>
-  </sitemap>
 
 
 </urlset>

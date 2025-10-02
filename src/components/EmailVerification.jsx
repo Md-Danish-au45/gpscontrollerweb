@@ -182,10 +182,10 @@ export function EmailVerification() {
           <div className="mt-8 pt-6 border-t border-gray-200 text-center">
             <div className="flex items-center justify-center mb-2">
               <Mail className="w-4 h-4 text-gray-400 mr-2" />
-              <span className="text-sm text-gray-500">VerifyeKYC</span>
+              <span className="text-sm text-gray-500">GPS Controller</span>
             </div>
             <p className="text-xs text-gray-400">
-              Trusted Verification For A Digital World
+             Track Anything, Anywhere
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ export function EmailVerification() {
         {/* Footer */}
         <div className="text-center mt-6">
           <p className="text-xs text-gray-500">
-            © 2024 VerifyeKYC. All rights reserved.
+            © 2024 GPS Controller. All rights reserved.
           </p>
         </div>
       </div>

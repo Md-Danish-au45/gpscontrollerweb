@@ -190,6 +190,7 @@ import DisclaimerPage from '../home/Disclaimer';
 import HowToVerifyPage from '../home/HowToGetVerify';
 import CaseStudyPage from '../home/CaseStudyPage'; 
 import { EmailVerification } from '../components/EmailVerification';
+import ComingSoon from '../pages/CommingSoon';
 
 // PROBLEM: The RootRedirect component was removed because it was forcing
 // logged-in users away from the homepage. The homepage should be accessible to everyone.
@@ -280,6 +281,70 @@ export const publicRoutes = [
   {
     path: '/verify-email/:token',
     element: <EmailVerification />,
+    errorElement: <ErrorPage />
+  },
+    {
+    path: '/gps-tracking',
+    element: <ComingSoon 
+      title="GPS Tracking Solutions for Vehicles & Assets" 
+      desc="Explore real-time GPS tracking for vehicles, assets, and smart devices." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/iot-sensors',
+    element: <ComingSoon 
+      title="IoT Sensors for Smart Monitoring" 
+      desc="Monitor industrial IoT sensors with GPS and cloud connectivity." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/fleet-management',
+    element: <ComingSoon 
+      title="Fleet Management with GPS & IoT" 
+      desc="Manage fleets with advanced GPS IoT tracking systems." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/asset-tracking',
+    element: <ComingSoon 
+      title="Asset Tracking with IoT Devices" 
+      desc="Track assets in real-time using IoT GPS technology." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/smart-devices',
+    element: <ComingSoon 
+      title="Smart GPS & IoT Devices" 
+      desc="Discover connected IoT devices and smart GPS sensors." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/realtime-monitoring',
+    element: <ComingSoon 
+      title="Real-time IoT Sensor Monitoring" 
+      desc="Enable live IoT sensor monitoring and automation." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/industrial-iot',
+    element: <ComingSoon 
+      title="Industrial IoT Solutions" 
+      desc="IoT sensors for manufacturing, logistics, and automation." 
+    />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/cloud-iot-platform',
+    element: <ComingSoon 
+      title="Cloud-Connected IoT GPS Platform" 
+      desc="Connect IoT devices with cloud-based GPS tracking solutions." 
+    />,
     errorElement: <ErrorPage />
   },
   {
