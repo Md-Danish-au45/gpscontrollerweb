@@ -26,9 +26,9 @@ export default function HomePage() {
       <TopBar />
       <Header />
       <HeroSection />
+      <StatsBanner />
       {/* <ServicesSection /> */}
       <ServicesShowcase />
-      <StatsBanner />
       <TrustSection />
       <CustomerReviews />
       <FAQSection />

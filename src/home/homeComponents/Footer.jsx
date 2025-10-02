@@ -16,73 +16,68 @@ import {
   Users,
   Zap,
   ExternalLink,
-  User,
-  Building,
-  Briefcase,
-  FileCheck,
-  Home,
-  UserCheck,
-  ChefHat,
-  Baby,
-  Wrench,
+  Car, // GPS/Fleet/Vehicle tracking
+  Server, // IoT/Platform
+  Globe, // Mapping
+  BatteryCharging, // Power/Performance
+  Router, // Connectivity/API
+  Settings, // Customization
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import favicon from "@/assets/favicon.png"
-import VerifyeKyc from "@/assets/logo.png"
+import GPSControllerLogo from "@/assets/logo.png" // Assuming you'll replace this with a GPS logo
 
-// Updated footer data according to verify.txt specifications
+// Updated footer data for GPS Controller
 const footerData = {
   company: {
-    name: "Verify E-KYC",
+    name: "GPS Controller",
     description:
-      "Verify EKYC is India’s trusted identity verification and eKYC solution provider. We help businesses streamline customer onboarding, prevent fraud, and stay KYC/AML compliant.",
+      "GPS Controller is India’s leading provider of real-time GPS and IoT tracking solutions. We help businesses optimize fleet management, secure assets, and monitor field operations efficiently.",
     contact: {
-      email: "Verifyekyc@gmail.com",
-      secEmail: "info@bringmark.com",
-      phone: "+91 7982981354",
-      address: "Dwarka sector 19B, New Delhi 110071 ",
+      email: "support@gpscontroller.in",
+      secEmail: "sales@gpscontroller.in",
+      phone: "+91 9876543210",
+      address: "IT Park, Sector 62, Noida, UP 201301", // Updated address to be generic/relevant
     },
   },
-  // Updated links according to verify.txt requirements
+  // Updated links for GPS Tracking/IoT services
   links: {
-    verificationServices: [
-      { name: "Identity Verification", href: "/product/688584e64c6ace5e2f798009", icon: User },
-      { name: "Financial & Business Checks", href: "/product/6885880c4c6ace5e2f798020", icon: Building },
-      { name: "Employment Verification", href: "/product/6885856b4c6ace5e2f79800b", icon: Briefcase },
-      { name: "Legal & Compliance Checks", href: "/product/688587b94c6ace5e2f79801e", icon: FileCheck },
+    trackingServices: [
+      { name: "Real-time Vehicle Tracking", href: "/product/vehicle-tracking", icon: Car },
+      { name: "IoT Asset Monitoring", href: "/product/asset-monitoring", icon: Server },
+      { name: "Fleet Management Software", href: "/product/fleet-management", icon: Users },
+      { name: "API & Integrations", href: "/product/gps-api", icon: Router },
     ],
-    domesticServices: [
-      { name: "Tenant Verification", href: "/blog/online-tenant-police-verification", icon: Home },
-      { name: "Maid Verification", href: "/blog/maid-police-verification", icon: UserCheck },
-      { name: "Cook / Chef Verification", href: "/blog/cook-and-chef-verification", icon: ChefHat },
-      { name: "Nanny / Babysitter Identity Check", href: "#", icon: Baby },
-      { name: "Housekeeping Staff Verification", href: "#", icon: Wrench },
+    platformFeatures: [
+      { name: "Geo-fencing & Alerts", href: "/features/geofencing", icon: MapPin },
+      { name: "Route Optimization", href: "/features/route-optimization", icon: Globe },
+      { name: "Fuel & Performance Monitoring", href: "/features/performance", icon: BatteryCharging },
+      { name: "Custom Reports & Analytics", href: "/features/reports", icon: Settings },
     ],
     company: [
       { name: "About Us", href: "/about-us" },
-      { name: "Contact", href: "/contact-us" },
+      { name: "Contact Us", href: "/contact-us" },
       { name: "Pricing", href: "/pricing" },
-      { name: "Blog", href: "/blog" },
+      { name: "Blog / Case Studies", href: "/blog" },
     ],
     legal: [
       { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Terms & Condition", href: "/terms-and-condition" },
-       { name: "Disclaimer", href: "/disclaimer" },
+      { name: "Terms of Service", href: "/terms-and-condition" },
+       { name: "SLA (Service Level)", href: "/sla" },
     ],
   },
   social: [
-    // { name: "Twitter", icon: Twitter, href: "https://www.X.com", color: "hover:text-blue-400" },
-    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/verify-e-kyc/", color: "hover:text-blue-600" },
-    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61580484055626", color: "hover:text-blue-500" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/verifyekyc/", color: "hover:text-pink-500" },
-    // { name: "YouTube", icon: Youtube, href: "https://www.youtube.com", color: "hover:text-red-500" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/gps-controller/", color: "hover:text-blue-600" },
+    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/gpscontroller", color: "hover:text-blue-500" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/gpscontroller/", color: "hover:text-pink-500" },
+    { name: "Twitter", icon: Twitter, href: "https://www.X.com/gpscontroller", color: "hover:text-blue-400" },
   ],
   certifications: [
     { name: "ISO 27001", icon: Shield },
-    { name: "SOC 2", icon: Award },
+    { name: "SOC 2 Type II", icon: Award },
     { name: "GDPR", icon: Users },
-    { name: "PCI DSS", icon: Zap },
+    { name: "High Reliability", icon: Zap },
   ],
 }
 
@@ -116,9 +111,9 @@ const NewsletterSignup = () => {
   return (
     <div className="space-y-4">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Stay Updated</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">GPS Insights</h3>
         <p className="text-gray-600 text-sm leading-relaxed">
-          Get the latest updates on new features, security enhancements, and industry insights.
+          Get the latest on fleet optimization, IoT trends, and security updates.
         </p>
       </div>
       {!isSubmitted ? (
@@ -141,7 +136,7 @@ const NewsletterSignup = () => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gray-900 text-white hover:bg-green-700 font-semibold rounded-lg h-11 transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:transform-none"
+            className="w-full bg-blue-600 text-white hover:bg-blue-700 font-semibold rounded-lg h-11 transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:transform-none"
           >
             {isSubmitting ? (
               <div className="flex items-center justify-center gap-2">
@@ -189,10 +184,10 @@ export default function Footer() {
     }
   }, [])
 
-  // Available public routes for navigation
+  // Available public routes for navigation (Updated for GPS focus)
   const availableRoutes = [
     '/', '/about-us', '/privacy-policy', '/contact-us', '/pricing', 
-    '/blog', '/identity-verification'
+    '/blog', '/product/vehicle-tracking' // Example GPS routes
   ]
 
   const handleNavigation = (e, href) => {
@@ -201,7 +196,7 @@ export default function Footer() {
     }
     
     // Check if route is available in public routes
-    if (availableRoutes.includes(href)) {
+    if (availableRoutes.includes(href) || href.startsWith('/product/') || href.startsWith('/features/')) {
       e.preventDefault()
       navigate(href)
     }
@@ -238,13 +233,12 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center">
-                  <img src={VerifyeKyc} alt="" />
+                  <img src={GPSControllerLogo} alt="GPS Controller Logo" />
                 </div>
               <div className="flex flex-col">
     <h1 className="text-2xl sm:text-3xl font-bold leading-tight">
-      <span className="text-green-600">Verify</span>{" "}
-      <span className="text-blue-600">E-</span>
-      <span className="text-orange-500">KYC</span>
+      <span className="text-blue-600">GPS</span>{" "}
+      <span className="text-gray-800">Controller</span>
     </h1>
     
   </div>
@@ -285,31 +279,28 @@ export default function Footer() {
 
           {/* Services Sections */}
           <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-start lg:justify-center mx-auto gap-8">
-            {/* Verification & Domestic Services - Combined for mobile */}
-            <div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-8 md:gap-0">
-              {/* Verification Services */}
-              <div>
-                <h3 className="font-semibold mb-4 text-gray-900">Verification Services</h3>
-                <ul className="space-y-3">
-                  {footerData.links.verificationServices.map((link) => (
-                    <NavLink key={link.name} link={link} showIcon={true} />
-                  ))}
-                </ul>
-              </div>
-              {/* Domestic & Tenant Verification */}
-              <div>
-                <h3 className="font-semibold mb-4 text-gray-900">🏠 Domestic & Tenant</h3>
-                <ul className="space-y-3">
-                  {footerData.links.domesticServices.map((link) => (
-                    <NavLink key={link.name} link={link} showIcon={true} />
-                  ))}
-                </ul>
-              </div>
+            {/* Tracking Services */}
+            <div className="col-span-1">
+              <h3 className="font-semibold mb-4 text-gray-900">Tracking Services</h3>
+              <ul className="space-y-3">
+                {footerData.links.trackingServices.map((link) => (
+                  <NavLink key={link.name} link={link} showIcon={true} />
+                ))}
+              </ul>
+            </div>
+            
+            {/* Platform Features */}
+            <div className="col-span-1">
+              <h3 className="font-semibold mb-4 text-gray-900">Platform Features</h3>
+              <ul className="space-y-3">
+                {footerData.links.platformFeatures.map((link) => (
+                  <NavLink key={link.name} link={link} showIcon={true} />
+                ))}
+              </ul>
             </div>
 
-            {/* Company & Social Links - Combined for mobile */}
+            {/* Company Links */}
             <div className="flex flex-col md:col-span-1">
-              {/* Company */}
               <div>
                 <h3 className="font-semibold mb-4 text-gray-900">Company</h3>
                 <ul className="space-y-3">
@@ -341,7 +332,7 @@ export default function Footer() {
         <div className={`mt-12 pt-8 border-t border-gray-200 ${isVisible ? "animate-in slide-in-from-bottom-4 fade-in duration-700" : "opacity-0"}`} style={{ animationDelay: "300ms" }}>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h4 className="font-semibold mb-3 text-gray-900">Security & Compliance</h4>
+              <h4 className="font-semibold mb-3 text-gray-900">Security & Reliability</h4>
               <div className="flex flex-wrap gap-4">
                 {footerData.certifications.map((cert) => (
                   <div key={cert.name} className="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
@@ -352,8 +343,8 @@ export default function Footer() {
               </div>
             </div>
             <div className="text-center md:text-right">
-              <div className="text-2xl font-bold text-gray-900 mb-1">99.9%</div>
-              <div className="text-gray-600 text-sm">Uptime SLA</div>
+              <div className="text-2xl font-bold text-gray-900 mb-1">99.99%</div>
+              <div className="text-gray-600 text-sm">Real-time Uptime</div>
             </div>
           </div>
         </div>

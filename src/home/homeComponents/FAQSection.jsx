@@ -4,68 +4,69 @@ import { useState, useRef, useEffect } from "react"
 import { Plus, Minus, HelpCircle, Search, MessageCircle, Phone, Mail,Contact,ChevronRight } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 const faqData = [
+  // GPS Tracking and IoT Related FAQs - Added for SEO and User Clarity
   {
     id: 1,
     category: "Getting Started",
-    question: "What is e-KYC and how does Verify E-KYC work?",
+    question: "What is IoT GPS Tracking and how does your platform work?",
     answer:
-      "e-KYC (electronic Know Your Customer) is the process of verifying customer identity online. Verify E-KYC uses AI and machine learning to validate documents like Aadhaar, PAN, Voter ID, or Driving License in real time. Simply upload your document, and our system verifies it against government databases within seconds. This online e-KYC verification solution supports 50+ document types and provides instant compliance reports.",
+      "IoT GPS Tracking uses connected sensors (devices) to monitor and manage assets in real-time. Our platform connects data from various IoT GPS devices, processes it using cloud analytics, and presents it on a unified dashboard. It provides features like real-time location tracking, fleet management, and predictive maintenance alerts.",
     popular: true,
   },
   {
     id: 2,
-    category: "Security",
-    question: "Is online e-KYC verification safe and secure?",
+    category: "Integration",
+    question: "How can I integrate your GPS tracking API with my existing fleet software?",
     answer:
-      "Yes. Verify E-KYC uses bank-grade AES-256 encryption and complies with ISO 27001, SOC 2, and GDPR standards. Your data is encrypted in transit and at rest, stored on secure servers, and never retained longer than required. We also provide audit logs and compliance reports, making our e-KYC verification one of the safest solutions available.",
+      "Integration is seamless and developer-friendly. We offer a robust RESTful GPS Tracking API and SDKs for popular languages (Python, Node.js, Java). Our comprehensive documentation includes code examples for fetching live location data, setting up geo-fences, and receiving real-time event notifications. Most integrations can be completed within hours.",
     popular: true,
   },
   {
     id: 3,
-    category: "Enterprise",
-    question: "Can Verify E-KYC handle enterprise-level verification?",
+    category: "Security",
+    question: "How secure is my real-time GPS location data and IoT device information?",
     answer:
-      "Absolutely. Verify E-KYC is built for scale, supporting millions of verifications per month with 99.9% uptime. Features include bulk e-KYC verification, enterprise API integration, and team management. Large organizations choose us as their trusted e-KYC verification service provider for compliance and reliability.",
+      "Security is our top priority. All GPS location data and IoT telemetry are secured using AES-256 encryption during transmission and at rest. We are compliant with industry standards like ISO 27001 and GDPR. Data access is strictly controlled via Role-Based Access Control (RBAC) and detailed audit logs are maintained for full transparency.",
     popular: true,
   },
   {
     id: 4,
-    category: "Account",
-    question: "How do I sign up for Verify E-KYC?",
+    category: "Features",
+    question: "Does your platform support Geo-fencing and automated alerts for vehicle tracking?",
     answer:
-      "Creating an account takes less than 2 minutes. Click 'Sign Up', enter your business details, verify your email, and start verifying documents instantly. No credit card is required for the free trial. If you are searching 'how to verify e-KYC online?', this is the fastest way to begin.",
+      "Yes, our vehicle GPS tracking solution includes advanced Geo-fencing capabilities. You can easily define virtual boundaries on the map. The system automatically sends immediate alerts via SMS, email, or API callback when a vehicle enters or exits a Geo-fence, or if unauthorized movement is detected. This is essential for effective fleet management.",
     popular: true,
   },
   {
     id: 5,
-    category: "Pricing",
-    question: "What is the cost of e-KYC verification service?",
+    category: "Hardware & Compatibility",
+    question: "Which GPS tracking hardware or devices are compatible with your system?",
     answer:
-      "Verify E-KYC offers flexible pricing to suit startups and enterprises. Plans start from ₹15–20 per verification for basic checks, with discounts on higher volumes. Enterprise customers get custom quotes, SLA-backed performance, and dedicated support. Contact us for a personalized e-KYC pricing plan.",
+      "Our platform is designed for maximum compatibility and supports a wide range of devices from manufacturers like Teltonika, Concox, and Queclink. We offer standard protocols (e.g., AVL, TCP/UDP) and a flexible parsing engine. If you have specific hardware, our technical team can assist in integrating any IoT tracking device quickly.",
     popular: false,
   },
   {
     id: 6,
-    category: "Integration",
-    question: "How can I integrate Verify E-KYC API?",
+    category: "Performance",
+    question: "What is the update frequency and accuracy of your live GPS tracking?",
     answer:
-      "Integration is quick and developer-friendly. We provide REST APIs and SDKs for Python, Node.js, PHP, and Java. With complete documentation and sandbox testing, most integrations are completed in a few hours. Developers often ask 'How to integrate e-KYC API?', and our platform makes it simple.",
+      "Our system provides true real-time GPS updates, with configurable frequency typically set between 5 to 15 seconds for moving assets. We guarantee high location accuracy (typically $<5$ meters) by utilizing high-quality satellite data and smart filtering algorithms. This ensures your live tracking is always reliable.",
     popular: false,
   },
   {
     id: 7,
-    category: "Support",
-    question: "Does Verify E-KYC provide customer support?",
+    category: "Pricing",
+    question: "What is the pricing model for your IoT and GPS tracking services?",
     answer:
-      "Yes, we provide 24/7 support via live chat, email, and phone for enterprise users. Our average response time is under 2 hours. Along with dedicated account managers, we also offer documentation, tutorials, and a community forum to help customers with their e-KYC verification needs.",
+      "We offer flexible, subscription-based pricing tailored to the number of devices you track and the data usage. Plans start with basic GPS data tracking features, scaling up to enterprise-level solutions with advanced analytics and dedicated support. Contact our sales team for a custom quote based on your specific IoT fleet requirements.",
     popular: false,
   },
   {
     id: 8,
-    category: "Compliance",
-    question: "Is Verify E-KYC compliant with KYC/AML regulations?",
+    category: "Support",
+    question: "Do you offer technical support for API integration and device issues?",
     answer:
-      "Yes. Verify E-KYC complies with RBI KYC guidelines, AML regulations, GDPR, PCI DSS, and Indian data protection laws. We maintain certifications like ISO 27001 and SOC 2 Type II and undergo regular audits. Our platform provides audit trails and compliance reports to ensure regulators can easily verify adherence.",
+      "Absolutely. We provide dedicated 24/7 technical support for our enterprise users via live chat, email, and phone. Our support team specializes in IoT integration and troubleshooting device connectivity, ensuring minimal downtime for your GPS tracking solution.",
     popular: false,
   },
 ];
@@ -186,8 +187,7 @@ export default function FAQSection() {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Frequently asked Questions</h2>
 
                 <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                  Most questions and concerns about Verify E-KYC can be found here. Our platform has become the most
-                  popular and trusted verification solution. Check out some answers you're looking for.
+                  Get answers to all your queries about our IoT and GPS Tracking platform. We are dedicated to providing the most reliable and scalable tracking solutions for your business.
                 </p>
 
                 {/* <button className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
@@ -205,8 +205,8 @@ export default function FAQSection() {
                   <div className="text-gray-600 text-sm font-medium">Support Available</div>
                 </div>
                 <div className="text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
-                  <div className="text-3xl font-bold text-gray-600 mb-2">2min</div>
-                  <div className="text-gray-600 text-sm font-medium">Avg Response Time</div>
+                  <div className="text-3xl font-bold text-gray-600 mb-2">5 sec</div>
+                  <div className="text-gray-600 text-sm font-medium">Avg GPS Update Rate</div>
                 </div>
               </div>
 
@@ -241,7 +241,7 @@ export default function FAQSection() {
                   <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                   <input
                     type="text"
-                    placeholder="Search frequently asked questions..."
+                    placeholder="Search GPS tracking and IoT questions..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="pl-12 h-12 w-full bg-white border border-gray-200 focus:border-gray-500 focus:ring-2 focus:ring-gray-500/20 rounded-xl shadow-sm outline-none"
@@ -277,7 +277,7 @@ export default function FAQSection() {
                     Most Popular Questions
                   </h3>
                   <div className="space-y-4">
-                    {popularFAQs.slice(0, 3).map((faq, index) => (
+                    {popularFAQs.slice(0, 4).map((faq, index) => (
                       <FAQItem
                         key={faq.id}
                         faq={faq}

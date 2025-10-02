@@ -9,120 +9,120 @@ import { Badge } from "@/components/ui/badge"
 const mockReviews = [
   {
     id: 1,
-    name: "Priya Sharma",
-    title: "Product Manager",
-    company: "TechFlow Solutions",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616c0763c4e?w=60&h=60&fit=crop&crop=face",
+    name: "Aakash Mehta",
+    title: "Head of Logistics",
+    company: "FleetFast Transport",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "VerifyMe has transformed our onboarding process. The accuracy rate is outstanding. We've reduced fraud by 85% since implementation.",
+      "The real-time GPS tracking is flawless! We've reduced delivery delays by 20% and our fleet efficiency has seen a massive boost. The geofencing alerts are a game-changer.",
     date: "2 weeks ago",
     verified: true,
     location: "Mumbai, Maharashtra",
   },
   {
     id: 2,
-    name: "Raj Patel",
-    title: "CTO",
-    company: "SecureBank Ltd",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face",
+    name: "Pooja Singh",
+    title: "Operations Manager",
+    company: "ColdChain Supply",
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616c0763c4e?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "The real-time verification capabilities have exceeded our expectations. Customer satisfaction improved significantly, and the compliance features are exactly what we needed.",
+      "Integrating the IoT tracking API was surprisingly easy. The data accuracy for temperature and location monitoring is exceptional, helping us maintain strict cold chain compliance.",
     date: "1 month ago",
     verified: true,
     location: "Bangalore, Karnataka",
   },
   {
     id: 3,
-    name: "Ananya Singh",
-    title: "Operations Director",
-    company: "Global Fintech",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face",
+    name: "Vikas Sharma",
+    title: "CTO",
+    company: "TechSecure Assets",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "Exceptional service and support. The verification process is lightning-fast, and the detailed reporting helps us maintain compliance effortlessly.",
+      "We needed a highly reliable vehicle GPS tracking solution. This platform's stability and 99.99% uptime have ensured our high-value assets are always visible and secure.",
     date: "3 weeks ago",
     verified: true,
     location: "Delhi, NCR",
   },
   {
     id: 4,
-    name: "Vikram Kumar",
-    title: "Head of Security",
-    company: "CryptoVault Inc",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
+    name: "Geeta Iyer",
+    title: "Inventory Head",
+    company: "Warehouse Smart",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "The most reliable verification platform we've used. The fraud detection algorithms are sophisticated, and the customer support team is incredibly responsive.",
+      "The dedicated support for IoT device integration was outstanding. They helped us onboard 500+ trackers seamlessly. Now we have total control over our supply chain.",
     date: "2 months ago",
     verified: true,
     location: "Hyderabad, Telangana",
   },
   {
     id: 5,
-    name: "Meera Gupta",
-    title: "Compliance Manager",
-    company: "RegTech Solutions",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face",
+    name: "Rohan Kapoor",
+    title: "Security Analyst",
+    company: "SecureTransit Inc",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "VerifyMe's comprehensive verification suite has streamlined our entire compliance workflow. The documentation is excellent, and implementation was surprisingly smooth.",
+      "The data security features are top-notch. Knowing our sensitive GPS data tracking information is protected by AES-256 encryption gives us immense peace of mind.",
     date: "1 month ago",
     verified: true,
     location: "Pune, Maharashtra",
   },
   {
     id: 6,
-    name: "Arjun Reddy",
-    title: "VP Engineering",
-    company: "DataSecure Corp",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face",
+    name: "Neha Reddy",
+    title: "Product Owner",
+    company: "RouteOptimize Tech",
+    avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "The  performance is exceptional with 99.9% uptime. The verification accuracy and speed have helped us scale our platform without compromising security.",
+      "The customizable reports on driver behavior and route optimization have been invaluable. This is the best GPS tracking software we've used for reducing fuel costs.",
     date: "3 weeks ago",
     verified: true,
     location: "Chennai, Tamil Nadu",
   },
   {
     id: 7,
-    name: "Sneha Joshi",
-    title: "Tech Lead",
-    company: "StartupHub India",
-    avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=60&h=60&fit=crop&crop=face",
+    name: "Sanjay Joshi",
+    title: "Startup Founder",
+    company: "LastMile Delivery",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "Outstanding platform with excellent customer service. The verification process is smooth and the integration documentation is comprehensive.",
+      "Scalable and cost-effective pricing for startups. We started small and easily scaled our live tracking capabilities as our business grew. Highly recommended!",
     date: "1 week ago",
     verified: true,
     location: "Gurgaon, Haryana",
   },
   {
     id: 8,
-    name: "Rohit Agarwal",
-    title: "Business Analyst",
-    company: "FinServ Solutions",
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=60&h=60&fit=crop&crop=face",
-    rating: 5,
-    review:
-      "Game-changing solution for our business verification needs. The accuracy and speed are unmatched in the industry.",
-    date: "2 weeks ago",
-    verified: true,
-    location: "Kolkata, West Bengal",
-  },
-  {
-    id: 9,
-    name: "Kavya Nair",
-    title: "Product Owner",
-    company: "TechInnovate",
+    name: "Kavita Nair",
+    title: "Transport Planner",
+    company: "BulkGoods Movers",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&h=60&fit=crop&crop=face",
     rating: 5,
     review:
-      "Incredible platform that has revolutionized our identity verification process. Highly recommend to any business looking for reliable solutions.",
-    date: "4 days ago",
+      "The accuracy is amazing. We use the platform not just for tracking, but for billing and compliance. It is an incredibly reliable IoT fleet management solution.",
+    date: "2 weeks ago",
     verified: true,
     location: "Kochi, Kerala",
+  },
+  {
+    id: 9,
+    name: "Zubin Khan",
+    title: "Engineer Lead",
+    company: "Energy Grid India",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face",
+    rating: 5,
+    review:
+      "Our non-vehicular assets are now fully trackable. The platform handles diverse IoT tracking device types effortlessly. A vital tool for infrastructure maintenance.",
+    date: "4 days ago",
+    verified: true,
+    location: "Kolkata, West Bengal",
   }
 ]
 
@@ -256,14 +256,13 @@ export default function CustomerReviews() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <Star className="w-4 h-4 fill-current" />
-            Trusted by 10,000+ Companies
+            Trusted by Leading Logistics & IoT Companies
           </div>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">What Our Customers Say</h2>
 
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-            Join thousands of satisfied customers who trust our verification platform to secure their business
-            operations and enhance user experience.
+            Join thousands of satisfied customers who rely on our real-time GPS and IoT tracking platform to optimize their operations and secure their assets.
           </p>
 
           {/* Stats */}
@@ -294,16 +293,16 @@ export default function CustomerReviews() {
             {/* Satisfaction Rate */}
             <div className="text-center break-words w-full md:w-auto">
               <div className="text-2xl font-bold text-white mb-2 break-words">
-                99%
+                99.5%
               </div>
-              <p className="text-blue-100 text-sm">Satisfaction Rate</p>
+              <p className="text-blue-100 text-sm">Uptime Reliability</p>
             </div>
           </div>
 
           {/* Online Indian users section */}
           <div className="mt-10 mb-12">
             <div className="flex flex-col items-center">
-              <p className="text-blue-100 mb-4">Join our community of 50,000+ active users across India</p>
+              <p className="text-blue-100 mb-4">Join our community of 50,000+ active tracking users across India</p>
               <div className="flex -space-x-3">
                 {indianUsers.map((avatar, index) => (
                   <div key={index} className="w-10 h-10 rounded-full bg-white border-2 border-blue-500 overflow-hidden">

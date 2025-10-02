@@ -12,138 +12,139 @@ import {
   Zap,
   Globe,
   Wifi,
-  Clock,
+  Cloud,
   CheckCircle,
   TrendingUp,
-  Award
+  Award,
+  Layers,
+  Activity
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const servicesData = [
   {
     id: 1,
-    icon: MapPin,
+    icon: Cloud,
     theme: {
-      primary: 'from-blue-500 to-indigo-600',
-      accent: '#3b82f6',
+      primary: 'from-blue-500 to-cyan-600',
+      accent: '#0ea5e9',
       bgGlow: 'bg-blue-500/10',
     },
-    badge: 'REAL-TIME GPS TRACKING',
-    title: 'Advanced GPS Tracking Controller for Fleet Management',
-    description: 'Professional GPS controller with real-time vehicle tracking, route optimization, and fleet monitoring. Track multiple vehicles simultaneously with precision location updates every second.',
+    badge: 'CLOUD-BASED GPS PLATFORM',
+    title: 'IoT GPS Tracking Platform with Cloud Analytics',
+    description: 'Enterprise-grade cloud GPS tracking platform powered by IoT technology. Real-time vehicle monitoring, advanced analytics, and AI-driven insights for intelligent fleet management and predictive maintenance.',
     features: [
-      "Live GPS tracking with 1-second updates",
-      "Multi-vehicle fleet management dashboard",
-      "Route optimization & geofencing alerts",
-      "Historical route playback & analytics"
+      "Cloud-based GPS data processing & storage",
+      "AI-powered route prediction & optimization",
+      "Scalable IoT infrastructure for unlimited devices",
+      "Advanced analytics dashboard with custom reports"
     ],
-    stats: { value: '10K+', label: 'Vehicles Tracked' }
+    stats: { value: 'Cloud', label: 'IoT Platform' }
   },
   {
     id: 2,
-    icon: Satellite,
+    icon: Wifi,
     theme: {
-      primary: 'from-purple-500 to-pink-600',
-      accent: '#a855f7',
+      primary: 'from-purple-500 to-indigo-600',
+      accent: '#8b5cf6',
       bgGlow: 'bg-purple-500/10',
     },
-    badge: 'MULTI-GNSS NAVIGATION',
-    title: 'Multi-Constellation GNSS GPS Controller System',
-    description: 'High-precision GPS navigation controller supporting GPS, GLONASS, Galileo, and BeiDou satellites. Achieve centimeter-level accuracy for surveying, construction, and precision applications.',
+    badge: '5G IOT CONNECTIVITY',
+    title: 'Next-Gen 5G IoT GPS Tracking System',
+    description: 'Ultra-fast 5G IoT GPS tracker with edge computing capabilities. Experience lightning-speed data transmission, low latency tracking, and seamless connectivity for mission-critical vehicle tracking applications.',
     features: [
-      "Support for GPS, GLONASS, Galileo, BeiDou",
-      "Centimeter-level positioning accuracy",
-      "RTK (Real-Time Kinematic) correction",
-      "Professional surveying & mapping tools"
+      "5G & 4G LTE dual-mode IoT connectivity",
+      "Edge computing for instant data processing",
+      "Ultra-low latency (<10ms) tracking updates",
+      "Seamless network switching & failover"
     ],
-    stats: { value: '99.9%', label: 'Position Accuracy' }
+    stats: { value: '5G', label: 'IoT Network' }
   },
   {
     id: 3,
-    icon: Radio,
+    icon: Layers,
     theme: {
-      primary: 'from-emerald-500 to-teal-600',
+      primary: 'from-emerald-500 to-green-600',
       accent: '#10b981',
       bgGlow: 'bg-emerald-500/10',
     },
-    badge: 'IOT GPS INTEGRATION',
-    title: 'IoT-Connected GPS Controller with Cloud Platform',
-    description: 'Smart GPS controller with 4G/5G connectivity and cloud integration. Monitor assets remotely, receive instant alerts, and access data from any device through our secure web portal.',
+    badge: 'IOT SENSOR INTEGRATION',
+    title: 'Multi-Sensor IoT GPS Tracking Solution',
+    description: 'Advanced IoT GPS system integrated with multiple sensors for comprehensive vehicle monitoring. Track temperature, fuel levels, door status, cargo weight, and environmental conditions in real-time.',
     features: [
-      "4G LTE & 5G wireless connectivity",
-      "Cloud-based GPS tracking platform",
-      "Real-time alerts & notifications",
-      "Mobile app & web dashboard access"
+      "Integration with 20+ IoT sensor types",
+      "Temperature, fuel, humidity monitoring",
+      "Door/cargo sensors with instant alerts",
+      "Custom IoT sensor configuration support"
     ],
-    stats: { value: '24/7', label: 'Cloud Monitoring' }
+    stats: { value: '20+', label: 'IoT Sensors' }
   },
   {
     id: 4,
-    icon: Shield,
+    icon: Activity,
     theme: {
       primary: 'from-orange-500 to-red-600',
       accent: '#f97316',
       bgGlow: 'bg-orange-500/10',
     },
-    badge: 'INDUSTRIAL GPS TRACKING',
-    title: 'Rugged GPS Controller for Heavy Equipment & Machinery',
-    description: 'Military-grade GPS tracking controller built for extreme conditions. IP67 waterproof, shock-resistant design for construction equipment, mining vehicles, and agricultural machinery.',
+    badge: 'PREDICTIVE IOT ANALYTICS',
+    title: 'AI-Powered Predictive GPS IoT Analytics',
+    description: 'Machine learning-enabled IoT GPS platform that predicts vehicle maintenance needs, driver behavior patterns, and optimal routes. Reduce downtime and maximize fleet efficiency with predictive intelligence.',
     features: [
-      "IP67 waterproof & dustproof rating",
-      "Shock & vibration resistant design",
-      "Wide temperature range (-40°C to 85°C)",
-      "Heavy-duty mounting & connections"
+      "ML-based predictive maintenance alerts",
+      "Driver behavior pattern analysis",
+      "Fuel consumption prediction algorithms",
+      "Anomaly detection & risk assessment"
     ],
-    stats: { value: '5 Years', label: 'Warranty' }
+    stats: { value: 'AI/ML', label: 'Powered' }
   },
   {
     id: 5,
-    icon: Gauge,
+    icon: Globe,
     theme: {
       primary: 'from-cyan-500 to-blue-600',
       accent: '#06b6d4',
       bgGlow: 'bg-cyan-500/10',
     },
-    badge: 'VEHICLE DIAGNOSTICS',
-    title: 'GPS Controller with OBD-II Vehicle Diagnostics',
-    description: 'Advanced GPS tracking controller with OBD-II integration. Monitor fuel consumption, engine health, speed, and driving behavior alongside real-time GPS location tracking.',
+    badge: 'GLOBAL IOT COVERAGE',
+    title: 'Worldwide IoT GPS Tracking with Roaming',
+    description: 'Global IoT GPS tracking solution with international roaming support. Track vehicles across 150+ countries with seamless connectivity, unified dashboard, and multi-currency billing support.',
     features: [
-      "OBD-II vehicle diagnostics integration",
-      "Fuel consumption & efficiency tracking",
-      "Engine health & error code monitoring",
-      "Driver behavior & safety scoring"
+      "150+ country IoT network coverage",
+      "Automatic international roaming",
+      "Multi-region data center support",
+      "Global SIM with local connectivity"
     ],
-    stats: { value: '50+', label: 'Data Points' }
+    stats: { value: '150+', label: 'Countries' }
   },
   {
     id: 6,
-    icon: Zap,
+    icon: Shield,
     theme: {
-      primary: 'from-yellow-500 to-orange-600',
-      accent: '#eab308',
-      bgGlow: 'bg-yellow-500/10',
+      primary: 'from-indigo-500 to-purple-600',
+      accent: '#6366f1',
+      bgGlow: 'bg-indigo-500/10',
     },
-    badge: 'ASSET TRACKING',
-    title: 'Battery-Powered GPS Controller for Asset Tracking',
-    description: 'Long-lasting GPS tracker with up to 3 years battery life. Perfect for tracking containers, trailers, equipment, and valuable assets with minimal maintenance requirements.',
+    badge: 'SECURE IOT ECOSYSTEM',
+    title: 'Enterprise Security for IoT GPS Networks',
+    description: 'Bank-grade security for IoT GPS infrastructure. End-to-end encryption, secure device authentication, blockchain-based data integrity, and compliance with ISO 27001 & GDPR standards.',
     features: [
-      "Up to 3 years battery life on single charge",
-      "Magnetic mounting for easy installation",
-      "Scheduled & event-triggered tracking",
-      "Low-power consumption design"
+      "AES-256 end-to-end IoT encryption",
+      "Blockchain-verified location data",
+      "Secure boot & device authentication",
+      "ISO 27001 & GDPR compliant platform"
     ],
-    stats: { value: '3 Years', label: 'Battery Life' }
+    stats: { value: 'ISO', label: 'Certified' }
   }
 ];
 
-// Trusted Brands Data
 const trustedBrands = [
-  { name: 'Garmin', logo: 'G' },
-  { name: 'TomTom', logo: 'TT' },
-  { name: 'Trimble', logo: 'T' },
-  { name: 'u-blox', logo: 'U' },
-  { name: 'HERE', logo: 'H' },
-  { name: 'Qualcomm', logo: 'Q' },
+  { name: 'AWS IoT', logo: 'AWS' },
+  { name: 'Azure IoT', logo: 'AZ' },
+  { name: 'Google Cloud', logo: 'GC' },
+  { name: 'IBM Watson', logo: 'IBM' },
+  { name: 'Cisco IoT', logo: 'CS' },
+  { name: 'Siemens', logo: 'SI' },
 ];
 
 const ServiceCard = ({ data, index }) => {
@@ -152,78 +153,97 @@ const ServiceCard = ({ data, index }) => {
   
   return (
     <div 
-      className={`group relative rounded-3xl overflow-hidden transition-all duration-500 ${
-        index % 2 === 0 ? 'lg:ml-0' : 'lg:ml-12'
-      }`}
+      className="group relative rounded-2xl overflow-hidden transition-all duration-500"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Background Gradient */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${data.theme.primary} opacity-5 group-hover:opacity-10 transition-opacity duration-500`} />
+      {/* IoT-themed Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.3) 0%, transparent 50%)',
+        }} />
+      </div>
       
-      {/* Glow Effect */}
-      <div className={`absolute -inset-1 ${data.theme.bgGlow} blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+      {/* Card Border with Gradient */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${data.theme.primary} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`} style={{ padding: '2px' }}>
+        <div className="w-full h-full bg-white rounded-2xl" />
+      </div>
       
       {/* Card Content */}
-      <div className="relative bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-lg group-hover:shadow-2xl transition-all duration-500">
-        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-          {/* Icon Column */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-start">
-            <div className={`relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br ${data.theme.primary} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-              <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
-              <div className="absolute inset-0 rounded-2xl bg-white/20 animate-pulse" />
+      <div className="relative bg-white border-2 border-gray-100 group-hover:border-transparent rounded-2xl p-6 sm:p-8 shadow-md group-hover:shadow-2xl transition-all duration-500">
+        {/* Header Section */}
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 mb-6">
+          {/* Icon */}
+          <div className="flex-shrink-0">
+            <div className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-gradient-to-br ${data.theme.primary} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+              <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white relative z-10" />
+              {/* IoT Connection Lines Animation */}
+              <div className="absolute inset-0 rounded-xl">
+                <div className="absolute top-0 right-0 w-2 h-2 bg-white rounded-full animate-ping" style={{ animationDelay: '0s' }} />
+                <div className="absolute bottom-0 left-0 w-2 h-2 bg-white rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
+              </div>
             </div>
           </div>
           
-          {/* Content Column */}
-          <div className="lg:col-span-7 space-y-4">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-100 border border-gray-200">
-              <div className={`w-2 h-2 rounded-full ${data.theme.bgGlow} animate-pulse`} style={{ backgroundColor: data.theme.accent }} />
-              <span className="text-xs font-bold text-gray-700 tracking-wide">{data.badge}</span>
+          {/* Title & Badge */}
+          <div className="flex-1 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 border border-gray-200">
+              <Wifi className="w-3 h-3 text-gray-600 animate-pulse" />
+              <span className="text-xs font-bold text-gray-700 tracking-wider">{data.badge}</span>
             </div>
             
-            {/* Title */}
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight lg:group-hover:text-transparent lg:group-hover:bg-gradient-to-r lg:group-hover:bg-clip-text transition-all duration-300" style={{ backgroundImage: isHovered ? `linear-gradient(to right, ${data.theme.accent}, ${data.theme.accent}dd)` : 'none' }}>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">
               {data.title}
             </h3>
-            
-            {/* Description */}
-            <p className="text-gray-600 leading-relaxed">
-              {data.description}
-            </p>
-            
-            {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-3 pt-2">
-              {data.features.map((feature, idx) => (
-                <div key={idx} className="flex items-start gap-2 group/feature">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 transition-colors duration-300" style={{ color: isHovered ? data.theme.accent : '#10b981' }} />
-                  <span className="text-sm text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
           </div>
           
-          {/* Stats & CTA Column */}
-          <div className="lg:col-span-3 flex flex-col items-center lg:items-end gap-4">
-            {/* Stat Card */}
-            <div className={`w-full max-w-[200px] p-4 rounded-xl bg-gradient-to-br ${data.theme.primary} text-white text-center shadow-lg group-hover:scale-105 transition-transform duration-300`}>
-              <div className="text-3xl font-bold">{data.stats.value}</div>
-              <div className="text-sm opacity-90">{data.stats.label}</div>
-            </div>
-            
-            {/* CTA Button */}
-            <Button 
-              className="w-full max-w-[200px] group/btn relative overflow-hidden rounded-xl py-3 font-semibold shadow-md hover:shadow-lg transition-all duration-300"
-              style={{ backgroundColor: data.theme.accent }}
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2 text-white">
-                Learn More
-                <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300" />
-            </Button>
+          {/* Stats Badge */}
+          <div className={`flex-shrink-0 px-4 py-3 rounded-xl bg-gradient-to-br ${data.theme.primary} text-white text-center shadow-md group-hover:scale-105 transition-transform duration-300`}>
+            <div className="text-lg sm:text-xl font-bold whitespace-nowrap">{data.stats.value}</div>
+            <div className="text-xs opacity-90 whitespace-nowrap">{data.stats.label}</div>
           </div>
+        </div>
+        
+        {/* Description */}
+        <p className="text-gray-600 leading-relaxed mb-6">
+          {data.description}
+        </p>
+        
+        {/* Features Grid */}
+        <div className="grid sm:grid-cols-2 gap-3 mb-6">
+          {data.features.map((feature, idx) => (
+            <div key={idx} className="flex items-start gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+              <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: data.theme.accent }} />
+              <span className="text-sm text-gray-700">{feature}</span>
+            </div>
+          ))}
+        </div>
+        
+        {/* CTA Button */}
+        <Button 
+          className="w-full group/btn relative overflow-hidden rounded-xl py-3 font-semibold shadow-md hover:shadow-lg transition-all duration-300"
+          style={{ backgroundColor: data.theme.accent }}
+        >
+          <span className="relative z-10 flex items-center justify-center gap-2 text-white">
+            Explore IoT Solution
+            <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+          </span>
+          <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300" />
+        </Button>
+        
+        {/* IoT Network Pattern Decoration */}
+        <div className="absolute top-4 right-4 w-24 h-24 opacity-5 pointer-events-none">
+          <svg viewBox="0 0 100 100" className="w-full h-full">
+            <circle cx="50" cy="50" r="2" fill="currentColor" />
+            <circle cx="30" cy="30" r="1.5" fill="currentColor" />
+            <circle cx="70" cy="30" r="1.5" fill="currentColor" />
+            <circle cx="30" cy="70" r="1.5" fill="currentColor" />
+            <circle cx="70" cy="70" r="1.5" fill="currentColor" />
+            <line x1="50" y1="50" x2="30" y2="30" stroke="currentColor" strokeWidth="0.5" />
+            <line x1="50" y1="50" x2="70" y2="30" stroke="currentColor" strokeWidth="0.5" />
+            <line x1="50" y1="50" x2="30" y2="70" stroke="currentColor" strokeWidth="0.5" />
+            <line x1="50" y1="50" x2="70" y2="70" stroke="currentColor" strokeWidth="0.5" />
+          </svg>
         </div>
       </div>
     </div>
@@ -232,125 +252,125 @@ const ServiceCard = ({ data, index }) => {
 
 export default function ServicesShowcase() {
   return (
-    <>
-      <section className="w-full bg-gradient-to-b from-white via-gray-50 to-white py-16 sm:py-20 lg:py-24 relative overflow-hidden">
-        {/* Decorative Background */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, gray 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
+    <section className="w-full bg-gradient-to-b from-gray-50 via-white to-gray-50 py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+      {/* IoT Network Background Animation */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px'
+        }} />
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header Section */}
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 shadow-sm">
+            <Layers className="w-4 h-4 text-blue-600" />
+            <span className="text-sm font-semibold text-blue-700">IoT-Enabled GPS Technology</span>
+          </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+            Intelligent  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">IoT GPS Tracking </span> Systems
+          </h2>
+          
+          {/* Subheading */}
+         <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+  Advanced <strong className="text-gray-900">IoT-based GPS tracking systems</strong> with cloud integration, 
+  <strong className="text-gray-900">AI-powered analytics</strong>, and ultra-fast 
+  <strong className="text-gray-900">5G connectivity</strong>. Optimize fleet management, vehicle monitoring, 
+  and asset tracking with intelligent, real-time GPS solutions.
+</p>
+
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Header Section */}
-          <div className="text-center mb-12 sm:mb-16 space-y-4">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 shadow-sm">
-              <Globe className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-semibold text-blue-700">Professional GPS Solutions</span>
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-16">
+          {servicesData.map((service, index) => (
+            <ServiceCard key={service.id} data={service} index={index} />
+          ))}
+        </div>
+        
+        {/* IoT Ecosystem Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-24 pt-12 border-t border-gray-200">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-100 mb-4">
+              <Award className="w-4 h-4 text-purple-600" />
+              <span className="text-xs font-semibold text-purple-700">TRUSTED IoT PARTNERS</span>
             </div>
-            
-            {/* Main Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-              Complete <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">GPS Controller</span> Solutions
-            </h2>
-            
-            {/* Subheading */}
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Industry-leading <strong className="text-gray-900">GPS tracking controllers</strong> and <strong className="text-gray-900">navigation systems</strong> for real-time monitoring, fleet management, and precision positioning across all industries.
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+              Powered by Leading <span className="text-blue-600">IoT Cloud Platforms</span>
+            </h3>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+              Our GPS tracking solutions integrate seamlessly with industry-leading IoT platforms for enterprise-grade reliability and scalability
             </p>
-            
-            {/* Key Benefits */}
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 pt-4">
-              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-sm border border-gray-200">
-                <Clock className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium text-gray-700">Real-Time Tracking</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-sm border border-gray-200">
-                <Shield className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">99.9% Accuracy</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-sm border border-gray-200">
-                <Wifi className="w-5 h-5 text-purple-600" />
-                <span className="text-sm font-medium text-gray-700">IoT Connected</span>
-              </div>
-            </div>
           </div>
           
-          {/* Services Cards */}
-          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
-            {servicesData.map((service, index) => (
-              <ServiceCard key={service.id} data={service} index={index} />
+          {/* Brand Logos */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+            {trustedBrands.map((brand, idx) => (
+              <div 
+                key={idx}
+                className="group flex flex-col items-center justify-center p-4 sm:p-6 bg-white rounded-xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-sm sm:text-base font-bold text-gray-700 group-hover:from-blue-100 group-hover:to-indigo-100 group-hover:text-blue-600 transition-all duration-300">
+                  {brand.logo}
+                </div>
+                <span className="text-xs sm:text-sm font-medium text-gray-600 mt-2 group-hover:text-gray-900">{brand.name}</span>
+              </div>
             ))}
           </div>
+        </div>
+        
+        {/* IoT Stats Banner */}
+        <div className="mt-16 sm:mt-20 relative rounded-2xl overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600" />
+          <div className="absolute inset-0 opacity-10" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '30px 30px'
+          }} />
           
-          {/* Trusted Brands Section */}
-          <div className="mt-16 sm:mt-20 lg:mt-24 pt-12 border-t border-gray-200">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-100 border border-gray-200 mb-4">
-                <Award className="w-4 h-4 text-gray-600" />
-                <span className="text-xs font-semibold text-gray-700">TRUSTED BY INDUSTRY LEADERS</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                Compatible with Leading <span className="text-blue-600">GPS Technologies</span>
-              </h3>
-            </div>
-            
-            {/* Brand Logos */}
-            <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 sm:gap-8 items-center">
-              {trustedBrands.map((brand, idx) => (
-                <div 
-                  key={idx}
-                  className="group flex flex-col items-center justify-center p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-xl sm:text-2xl font-bold text-gray-700 group-hover:from-blue-100 group-hover:to-indigo-100 group-hover:text-blue-600 transition-all duration-300">
-                    {brand.logo}
-                  </div>
-                  <span className="text-xs sm:text-sm font-medium text-gray-600 mt-2 group-hover:text-gray-900">{brand.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Bottom Stats Section */}
-          <div className="mt-16 sm:mt-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-8 sm:p-12 text-white shadow-2xl">
+          <div className="relative p-8 sm:p-12 text-white">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
-                  <TrendingUp className="w-6 h-6 mr-2" />
-                  <div className="text-3xl sm:text-4xl font-bold">10M+</div>
+                  <Cloud className="w-6 h-6 mr-2" />
+                  <div className="text-3xl sm:text-4xl font-bold">100%</div>
                 </div>
-                <div className="text-sm opacity-90">Active GPS Devices</div>
+                <div className="text-sm opacity-90">Cloud-Based IoT</div>
               </div>
               
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
-                  <Gauge className="w-6 h-6 mr-2" />
-                  <div className="text-3xl sm:text-4xl font-bold">99.9%</div>
+                  <Wifi className="w-6 h-6 mr-2" />
+                  <div className="text-3xl sm:text-4xl font-bold">5G</div>
                 </div>
-                <div className="text-sm opacity-90">Position Accuracy</div>
+                <div className="text-sm opacity-90">IoT Connectivity</div>
               </div>
               
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
-                  <Clock className="w-6 h-6 mr-2" />
-                  <div className="text-3xl sm:text-4xl font-bold">&lt;1s</div>
+                  <Layers className="w-6 h-6 mr-2" />
+                  <div className="text-3xl sm:text-4xl font-bold">API</div>
                 </div>
-                <div className="text-sm opacity-90">Update Speed</div>
+                <div className="text-sm opacity-90">Integration Ready</div>
               </div>
               
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Shield className="w-6 h-6 mr-2" />
-                  <div className="text-3xl sm:text-4xl font-bold">24/7</div>
+                  <div className="text-3xl sm:text-4xl font-bold">Secure</div>
                 </div>
-                <div className="text-sm opacity-90">Support Available</div>
+                <div className="text-sm opacity-90">End-to-End Encrypted</div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

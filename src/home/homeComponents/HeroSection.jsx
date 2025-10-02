@@ -370,65 +370,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="relative bg-gradient-to-b from-gray-50 to-white py-10 sm:py-14 lg:py-20 text-center px-4">
-        {/* Badge */}
-        <div className="mb-4 sm:mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full bg-blue-50 text-blue-600 border border-blue-100">
-            ✨ Industry-Leading GPS Technology
-          </span>
-        </div>
-
-        {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-4xl mx-auto leading-snug">
-          Professional <span className="text-blue-600">GPS Controller System</span> for{" "}
-          <span className="text-green-600">Real-Time Tracking</span>
-        </h2>
-
-        {/* Description */}
-        <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Our advanced <strong className="text-gray-900">GPS controller technology</strong> delivers 
-          precision <strong className="text-gray-900">real-time GPS tracking</strong> and navigation solutions. 
-          From fleet management to personal tracking, our{" "}
-          <strong className="text-gray-900">GPS navigation controller</strong> provides industry-leading 
-          accuracy, reliability, and seamless integration for all your location-based needs.
-        </p>
-
-        {/* Trust Indicators */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-              <MapPin className="w-8 h-8 text-blue-600" />
-            </div>
-            <div className="text-2xl font-bold text-gray-900">10M+</div>
-            <div className="text-sm text-gray-600">Devices Tracked</div>
-          </div>
-          
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-3">
-              <Gauge className="w-8 h-8 text-green-600" />
-            </div>
-            <div className="text-2xl font-bold text-gray-900">99.9%</div>
-            <div className="text-sm text-gray-600">Uptime SLA</div>
-          </div>
-          
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-3">
-              <Clock className="w-8 h-8 text-purple-600" />
-            </div>
-            <div className="text-2xl font-bold text-gray-900">&lt;1s</div>
-            <div className="text-sm text-gray-600">Update Rate</div>
-          </div>
-          
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-3">
-              <Shield className="w-8 h-8 text-orange-600" />
-            </div>
-            <div className="text-2xl font-bold text-gray-900">ISO</div>
-            <div className="text-sm text-gray-600">Certified</div>
-          </div>
-        </div>
-      </section>
+    
     </>
   )
 }
