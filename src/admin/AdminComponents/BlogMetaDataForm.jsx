@@ -49,9 +49,9 @@ import CharacterCount from '@tiptap/extension-character-count';
 // Constants 
 // ✅ NEW GPS Tracking Categories applied
 const CATEGORIES = [
-    "GPS Fleet Tracking",
+   "GPS Fleet Tracking",
     "Live GPS Location",
-    "Route Optimization",
+    // "Route Optimization", // ❌ Removed: Caused the submission error
     "Geofencing & Alerts",
     "Vehicle Safety",
     "Fuel Monitoring",
