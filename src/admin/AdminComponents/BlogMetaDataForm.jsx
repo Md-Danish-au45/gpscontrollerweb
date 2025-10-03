@@ -48,16 +48,18 @@ import CharacterCount from '@tiptap/extension-character-count';
 
 // Constants 
 const CATEGORIES = [
-    "PAN",
-    "CIN",
-    "Financial & Business Checks",
-    "Identity Verification",
-    "Employment Verification",
-    "Biometric & AI-Based Verification",
-    "Profile & Database Lookup",
-    "Legal & Compliance Checks",
-    "Vehicle Verification"
+  "Real-Time GPS Tracking",
+  "Fleet Management System",
+  "Vehicle Tracking Solution",
+  "Route Optimization",
+  "Driver Behavior Monitoring",
+  "Geofencing Alerts",
+  "Fuel Usage Tracking",
+  "Trip & Distance Reports",
+  "Asset & Equipment Tracking",
+  "Live Location Sharing"
 ];
+
 const STATUS_OPTIONS = ['draft', 'published', 'archived'];
 
 // Initial State Definitions 
