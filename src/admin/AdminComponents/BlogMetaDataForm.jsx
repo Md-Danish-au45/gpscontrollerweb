@@ -51,8 +51,7 @@ import CharacterCount from '@tiptap/extension-character-count';
 const CATEGORIES = [
     "GPS Fleet Tracking",
     "Live GPS Location",
-    // "Route Optimization", // ❌ Removed: Caused the submission error
-    "Geofencing & Alerts",
+    "Geofencing & Alerts",  // Must match backend exactly
     "Vehicle Safety",
     "Fuel Monitoring",
     "Asset Management",
