@@ -47,17 +47,16 @@ import Placeholder from '@tiptap/extension-placeholder';
 import CharacterCount from '@tiptap/extension-character-count';
 
 // Constants 
-// 🚨 FIX APPLIED: Removed "Vehicle Tracking Solution" as it was causing the backend enum validation error.
+// ✅ NEW GPS Tracking Categories applied
 const CATEGORIES = [
-  "Real-Time GPS Tracking",
-  "Fleet Management System",
-  // "Vehicle Tracking Solution", // ❌ Removed: Caused the submission error
-  "Route Optimization",
-  "Geofencing Alerts",
-  "Fuel Usage Tracking",
-  "Trip & Distance Reports",
-  "Asset & Equipment Tracking",
-  "Live Location Sharing"
+    "GPS Fleet Tracking",
+    "Live GPS Location",
+    "Route Optimization",
+    "Geofencing & Alerts",
+    "Vehicle Safety",
+    "Fuel Monitoring",
+    "Asset Management",
+    "Trip Reporting"
 ];
 
 const STATUS_OPTIONS = ['draft', 'published', 'archived'];
