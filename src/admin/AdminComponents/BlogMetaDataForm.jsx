@@ -47,13 +47,12 @@ import Placeholder from '@tiptap/extension-placeholder';
 import CharacterCount from '@tiptap/extension-character-count';
 
 // Constants 
-// 🚨 FIX APPLIED: Removed "Driver Behavior Monitoring" as it was causing the backend enum validation error.
+// 🚨 FIX APPLIED: Removed "Vehicle Tracking Solution" as it was causing the backend enum validation error.
 const CATEGORIES = [
   "Real-Time GPS Tracking",
   "Fleet Management System",
-  "Vehicle Tracking Solution",
+  // "Vehicle Tracking Solution", // ❌ Removed: Caused the submission error
   "Route Optimization",
-  // "Driver Behavior Monitoring", // ❌ Removed: Caused the submission error
   "Geofencing Alerts",
   "Fuel Usage Tracking",
   "Trip & Distance Reports",
