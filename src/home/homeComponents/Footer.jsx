@@ -68,10 +68,10 @@ const footerData = {
     ],
   },
   social: [
-    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/gps-controller/", color: "hover:text-blue-600" },
-    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/gpscontroller", color: "hover:text-blue-500" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/gpscontroller/", color: "hover:text-pink-500" },
-    { name: "Twitter", icon: Twitter, href: "https://www.X.com/gpscontroller", color: "hover:text-blue-400" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/gps-controller", color: "hover:text-blue-600" },
+    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61581128972756", color: "hover:text-blue-500" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/gps_controller/", color: "hover:text-pink-500" },
+    // { name: "Twitter", icon: Twitter, href: "https://www.X.com/gpscontroller", color: "hover:text-blue-400" },
   ],
   certifications: [
     { name: "ISO 27001", icon: Shield },
