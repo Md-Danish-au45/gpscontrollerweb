@@ -66,7 +66,7 @@ const initialBlogState = {
     title: '',
     excerpt: '',
     content: '',
-    author: 'Verify EKYC Team',
+    author: 'GPS Controller Team',
     category: '',
     tags: [],
     status: 'published',
@@ -370,19 +370,20 @@ export default function BlogMetaDataForm() {
         handleChange('tags', formData.tags.filter(tag => tag !== tagToRemove));
     };
 
-    const handleEdit = (blog) => {
-        setEditingBlog(blog);
-        // Ensure tags is an array to prevent errors
-        const populatedState = {
-            ...initialBlogState,
-            ...blog,
-            tags: Array.isArray(blog.tags) ? blog.tags : [],
-        };
-        setFormData(populatedState);
-        setImagePreviews({ featuredImage: blog.featuredImage?.url || null });
-        setImageFiles(initialImageState);
-        setIsFormVisible(true);
+const handleEdit = (blog) => {
+    setEditingBlog(blog);
+    // Ensure tags is an array to prevent errors
+    const populatedState = {
+        ...initialBlogState,
+        ...blog,
+        tags: Array.isArray(blog.tags) ? blog.tags : [],
+        category: blog.category || '', // ✅ Explicitly set category
     };
+    setFormData(populatedState);
+    setImagePreviews({ featuredImage: blog.featuredImage?.url || null });
+    setImageFiles(initialImageState);
+    setIsFormVisible(true);
+};
 
     const handleDelete = async (blogId) => {
         if (window.confirm('Are you sure you want to delete this blog post?')) {
@@ -391,20 +392,29 @@ export default function BlogMetaDataForm() {
         }
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+const handleSubmit = async (e) => {
+    e.preventDefault();
 
-        // Clean up the HTML content
-        const finalContent = formData.content
-            .replace(/<p><\/p>/g, '') // Remove empty paragraphs
-            .replace(/\s+/g, ' ') // Normalize whitespace
-            .trim();
+    // ✅ ADD THIS VALIDATION BLOCK
+    if (!formData.category || formData.category.trim() === '') {
+        setErrorDialog({
+            isOpen: true,
+            message: 'Please select a category before submitting.'
+        });
+        return;
+    }
 
-        const formDataToSend = new FormData();
-        formDataToSend.append('blogData', JSON.stringify({
-            ...formData,
-            content: finalContent
-        }));
+    // Clean up the HTML content
+    const finalContent = formData.content
+        .replace(/<p><\/p>/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const formDataToSend = new FormData();
+    formDataToSend.append('blogData', JSON.stringify({
+        ...formData,
+        content: finalContent
+    }));
 
         if (imageFiles.featuredImage) {
             formDataToSend.append('featuredImage', imageFiles.featuredImage);
