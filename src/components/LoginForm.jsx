@@ -602,7 +602,7 @@ export function LoginForm() {
                     <input type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
                     <span className="text-gray-600 group-hover:text-gray-800">Remember me</span>
                   </label>
-                  <button type="button" onClick={() => setCurrentFlow('forgotPassword')} className="text-blue-600 hover:text-blue-800 font-medium hover:underline">Forgot password?</button>
+                  {/* <button type="button" onClick={() => setCurrentFlow('forgotPassword')} className="text-blue-600 hover:text-blue-800 font-medium hover:underline">Forgot password?</button> */}
                 </div>
                 <Button type="submit" disabled={isLoginLoading} className="w-full h-12 bg-gradient-to-r from-gray-900 to-gray-900 text-white rounded-xl font-medium">
                   {isLoginLoading ? "Signing in..." : "Sign In"}
@@ -633,12 +633,6 @@ export function LoginForm() {
 
           {renderFormContent()}
 
-          <div className="mt-8 text-center">
-            <p className="text-sm text-gray-600">
-              Don't have an account?{" "}
-              <button onClick={() => navigate("/signup")} className="text-blue-600 hover:text-blue-800 font-semibold">Sign up here</button>
-            </p>
-          </div>
         </AuthCard>
       </div>
     </div>
