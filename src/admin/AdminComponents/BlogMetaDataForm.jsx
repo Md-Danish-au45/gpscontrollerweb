@@ -47,9 +47,9 @@ import Placeholder from '@tiptap/extension-placeholder';
 import CharacterCount from '@tiptap/extension-character-count';
 
 // Constants 
-// ✅ NEW GPS Tracking Categories applied
+// 🚨 FIX APPLIED: Removed "Route Optimization" as it was causing the backend enum validation error.
 const CATEGORIES = [
-   "GPS Fleet Tracking",
+    "GPS Fleet Tracking",
     "Live GPS Location",
     // "Route Optimization", // ❌ Removed: Caused the submission error
     "Geofencing & Alerts",
