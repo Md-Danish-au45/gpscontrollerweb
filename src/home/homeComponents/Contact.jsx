@@ -287,7 +287,7 @@ const ContactUs = () => {
 
                 <div className="mt-6 h-48 bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://res.cloudinary.com/dz10btkpg/image/upload/v1757305786/Smart_IOT_Solutions_in_in_uvxdcn.png"
+                    src="https://res.cloudinary.com/self-taken/image/upload/v1759515665/GPS_Controller_Buiding_okytpn.png"
                     alt="GPS/IoT Monitoring Center"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />

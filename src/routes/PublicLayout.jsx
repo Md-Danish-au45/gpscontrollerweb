@@ -12,7 +12,7 @@ const PublicLayout = () => {
       {/* This handler will now only appear on general public routes */}
       <NotificationPermissionHandler />
       <Outlet />
-      {shouldShowWhatsAppIcon && <WhatsAppIcon />}
+      {/* {shouldShowWhatsAppIcon && <WhatsAppIcon />} */}
     </>
   );
 };
